@@ -21,6 +21,15 @@ nav {
     background-color: #e0e7e9;
     color: black;
 }
+.navi li a:hover {
+    background-color: #a3c6c4;
+    color: lightblue;
+}
+.navi li a:active {
+    background-color: #a3c6c4;
+    color: darkblue;
+}
+
 main {
     padding-bottom: 10px;
 }
