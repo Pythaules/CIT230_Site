@@ -1,3 +1,44 @@
+.hamburger { 
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem; 
+}
+.navi { 
+    list-style: none; 
+    padding-left: 0; 
+}
+.navi li { 
+    display: none; 
+}
+
+@media only screen and (max-width: 37.5em) {
+.navi.responsive { 
+    position: relative; 
+}
+.navi.responsive li { 
+    display: inline-block;
+    font-size: 16px;
+    background-color: #e0e7e9;
+    border-color: #354649;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.navi.responsive li a {	
+    text-align: center;	
+}
+.navi.responsive li:hover { 
+    background-color: #a3c6c4;
+    color: darkblue;
+}
+.navi.responsive li a:active {
+    background-color: #a3c6c4;
+    color: darkblue;
+}
+}
+
 head {
 
 }
@@ -11,7 +52,7 @@ header {
     color: #354649;
 }
 header img {
-    float: right;
+    float: left;
     width: 70px;
 }
 header h1 {
@@ -51,7 +92,7 @@ nav li a {
     color: #354649;
 }
 nav li.current {
-    background-color: white;
+    background-color: #a3c6c4;
 }
 .navi {
     
