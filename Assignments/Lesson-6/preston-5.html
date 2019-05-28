@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Unrelated Weather</title>
+    <meta name="author" content="Michael Smith">
+    <meta name="description" content="All the best weather in one place">
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+</head>
+
+<body>
+    <header>
+        <img src="images/monarch.png" alt="The site logo">
+        <h1>Unrelated Weather</h1>
+        <h2>4 cities with nothing in common but the weather!</h2>
+        <div class="motto">"Tracking weather to keep you safe."</div>
+    </header>
+    <nav>
+        <ul class="navi">
+            <li><a href="index.html"><br>Home</a></li>
+            <li class="current"><a href="preston-5.html"><br>Preston</a></li>
+            <li><a href="sodasprings-5.html">Soda<br>Springs</a></li>
+            <li><a href="fishhaven-5.html">Fish<br>Haven</a></li>
+            <li><a href="stormcenter-5.html">Storm<br>Center</a></li>
+            <li><a href="gallery-5.html"><br>Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>The city of Preston</h3>
+        <figure>
+            <img src="images/preston-original.jpeg" alt="Preston City" sizes="80vw"
+              srcset="images/preston200.jpg 400w,
+                      images/preston500.jpg 500w,
+                      images/preston800.jpg 800w,
+                      images/preston1100.jpg 1100w">
+          </figure>
+    </main>
+    <article>
+        <h3>Weather Summary</h3>
+      <div class="highlow">
+        <p>High: 74&#176;F</p>
+        <p>Low: 65&#176;F</p>
+      </div>
+      <div class="current">
+        <p>Rainy 65&#176;</p>
+        <picture>
+          <img src="images/rainy-small.jpg" alt="Bring an umbrella">
+        </picture>
+      </div>
+      <div class="conditions">
+        <p>Precipitation: 15&#37;</p>  
+        <p>Wind Speed: N 6 mph</p>  
+      </div>
+    </article>
+    <section>
+        <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2019 | Unrelated Weather | Virginia Beach </p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+</body>
