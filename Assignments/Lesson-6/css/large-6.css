@@ -1,0 +1,41 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    article p.town-article img { 
+        width: 29.333%; 
+    }
+    
+  }
+
+  @media only screen and (min-width: 37.5em) {
+		.hamburger { 
+			display: none;	
+		}
+		header,	nav {	
+		margin: 0 auto;	
+		max-width: 600px;	
+	}
+	h1 { 
+		text-align: center; 
+	}
+	.navi {	
+		background-color:  #354649;
+		overflow: hidden;	
+		text-align: center;	
+	}
+	.navi li { 
+		display: inline-block; 
+		margin-left: .25rem; 
+	}
+	.navi a {	
+		display: block;	
+		color:  #354649;
+		padding: .5rem;	
+		text-align: center;	
+		text-decoration: none;}
+	.navi a:hover {	
+		color: #000; 
+		background-color: #a3c6c4;	
+		border-radius: 20px;
+	}
+}

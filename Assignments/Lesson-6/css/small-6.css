@@ -37,6 +37,9 @@
     background-color: #a3c6c4;
     color: darkblue;
 }
+section {
+    display: none;
+}
 }
 
 head {
@@ -114,16 +117,28 @@ main {
     border-width: 5px;
 }
 article {
+    background-image: url("../images/rainy.jpg");
+    background-size: 400px;
+    background-repeat: no-repeat;
     padding-bottom: 10px;
     border-color: #354649;
     border-style: outset;
     border-width: 5px;
+}
+article p {
+    margin-left: 35px;
+    color: white;
 }
 section{
     padding-bottom: 10px; 
     border-color: #354649;
     border-style: outset;
     border-width: 5px;   
+}
+section table, td, th {
+    border-style: solid;
+    border-width: 2px;
+
 }
 footer {
     font-size: 20px;
