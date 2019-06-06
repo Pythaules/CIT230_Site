@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Unrelated Weather</title>
+    <meta name="author" content="Michael Smith">
+    <meta name="description" content="All the best weather in one place">
+    <link rel="icon" href="images/weathericon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/monarch.png" alt="The site logo">
+        <h1>Unrelated Weather</h1>
+        <h2>4 cities with nothing in common but the weather!</h2>
+        <div class="motto">"Tracking weather to keep you safe."</div>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navi">
+            <li><a href="index.html"><br>Home</a></li>
+            <li class="current"><a href="preston-6.html"><br>Preston</a></li>
+            <li><a href="sodasprings-6.html">Soda<br>Springs</a></li>
+            <li><a href="fishhaven-6.html">Fish<br>Haven</a></li>
+            <li><a href="stormcenter-6.html">Storm<br>Center</a></li>
+            <li><a href="gallery-6.html"><br>Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>The city of Preston</h3>
+        <picture>
+            <img src="images/preston-original.jpeg" alt="Preston City" sizes="80vw"
+              srcset="images/preston200.jpg 400w,
+                      images/preston500.jpg 500w,
+                      images/preston800.jpg 800w,
+                      images/preston1100.jpg 1100w">
+        </picture>
+        <p>There are no alligators swimming in the two rivers we call the Blackwater and Nottoway, but there has been a confirmed sighting of Alligator weed. Were that to have gone unchecked, it could have ultimately meant trouble for both bodies of water. Riverkeeper Jeff Turner, who regularly patrols both places, has reported that the plant had been discovered and confidently identified in the Blackwater. Actually, it’s not the first time that alternanthera philoxeroides has been seen. “Three years I discovered a small patch of it,” said Turner. “But no one knew what it was. It was just a weed to me. So I forgot about it.” But an area “plant guru,” as Turner calls him, recently saw the weed on a river trip of his own. Byron Carmean of Suffolk said he was on a pontoon boat last week. “We were going down river and in the center of the river and I thought I spotted it off to one side. I was hoping not,” he said. His suspicion was confirmed on the return back. He asked for the boat to get close enough and was able to pluck it out. “Without a doubt,” Carmean said after inspection, it was Alligator weed. This plant can sometimes float or anchor itself near the shallows, he added. The plant was imported from South America to be used in aquariums, and according to the Department of Agriculture, it was first reported in Alabama in 1897. “It’s rampant and highly invasive like kudzu [another invasive plant that’s found a home in this country.] It can spread by fragmenting or even carried by boat propellors.” As Turner explains in his Riverkeeper report on page A8, “It is a river-killing plant that can literally choke the life out of a waterway.” The USDA states that the weed “forms dense mats that crowd out native species and impede recreational activities such as boating, swimming and fishing.” To control it, chemical treatments such as herbicides are required, said Carmean. Because the Blackwater is regarded as a state scenic river, the USDA would have the authority to deal with the matter or authorize another agency. In this case, the Department of Conservation and Recreation. Turner told the paper early on Friday that a DCR representative was going to come out on Saturday to spray where Alligator weed was found. Later in the afternoon, he said that’s been postponed because a permit’s required from the Department of Environmental Quality. Meanwhile, Turner and company will go to “map it out” for the permit.</p>
+    </main>
+    <article class="preston">
+        <h3>Weather Summary</h3>
+        <p>High: 74&#176;F<br>Low: 65&#176;F</p>
+        <p>Rainy 65&#176;</p>
+        <p>Precipitation: 15&#37;</p>  
+        <p>Wind Speed: N 6 mph</p>  
+    </article>
+    <section>
+        <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th><th>Day 2</th><th>Day 3</th><th>Day 4</th><th>Day 5</th><th>Day 6</th><th>Day 7</th><th>Day 8</th><th>Day 9</th><th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td><td>87&deg;F</td><td>78&deg;F</td><td>75&deg;F</td><td>72&deg;F</td><td>72&deg;F</td><td>79&deg;F</td><td>83&deg;F</td><td>85&deg;F</td><td>89&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2019 | Unrelated Weather | Virginia Beach</p>
+        <p id="currentdate"></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>

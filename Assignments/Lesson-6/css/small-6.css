@@ -130,6 +130,7 @@ main {
     border-color: #354649;
     border-style: outset;
     border-width: 5px;
+    font-size: 12px;
 }
 article.preston {
     background-image: url("../images/rainy-small.jpg");
