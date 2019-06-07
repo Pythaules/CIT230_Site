@@ -22,8 +22,6 @@ header {
     margin-left: 5px;
     margin-right: 5px;
 }
-
-
 .navi.responsive { 
     position: absolute; 
     display: inline;
@@ -31,9 +29,7 @@ header {
     top: 2.0rem;
     right: 1.25rem; 
     width: 1in;
-
 }
-
 .navi.responsive li { 
     display: flex;
     font-size: 20px;
@@ -57,9 +53,8 @@ header {
 }
 .navi.responsive li a.current {
     background-color: #a3c6c4;
-
 }
-section {
+.forcast {
     display: none;
 }
 .gallery {
@@ -225,7 +220,6 @@ p {
   }
   .gallery {
     display: grid;
-    grid-template-columns: 1fr;
     grid-gap: 5px;
     padding: 5px;
 }
