@@ -9,4 +9,4 @@ var day = d.getDate();
 var monthName = theMonths[d.getMonth()];
 var year = d.getFullYear();
 
-document.getElementById("currentdate").innerHTML = dayName + "," + day + " " + monthName + " " + year;
+document.getElementById("currentdate").innerHTML = " - " + dayName + ", " + day + " " + monthName + " " + year;
