@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 * {
     font-family: Lato, sans-serif;
+    margin: 0px 5px 0px 5px;
 }    
 .hamburger { 
     display: inline;
@@ -16,7 +17,12 @@
     display: none; 
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 600px) {
+header {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 .navi.responsive { 
     position: absolute; 
@@ -25,11 +31,12 @@
     top: 2.0rem;
     right: 1.25rem; 
     width: 1in;
+
 }
 
 .navi.responsive li { 
-    display: block;
-    font-size: 16px;
+    display: flex;
+    font-size: 20px;
     background-color: #e0e7e9;
     border-color: #354649;
     border-style: outset;
@@ -55,6 +62,11 @@
 section {
     display: none;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 }
 
 head {
@@ -85,23 +97,21 @@ header div.motto {
     color: #354649;
 }
 nav {
+    display: flex;
+    flex-wrap: nowrap;
     background-color: #354649;
 }
 nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 nav li {
-    flex-grow: 3;
-    font-size: 20px;
     background-color: #e0e7e9;
     border-color: #354649;
     border-style: outset;
     border-width: 5px;
     border-radius: 20px;
-    text-align: center;
 }
 nav li a {
     text-decoration: none;
@@ -126,30 +136,33 @@ nav li.current {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding-bottom: 10px;
-    border-color: #354649;
-    border-style: outset;
-    border-width: 5px;
     font-size: 12px;
+}
+main p {
+    width: 95%;
+}
+article {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
 }
 article.preston {
     background-image: url("../images/rainy-small.jpg");
     background-size: 400px;
     background-repeat: no-repeat;
     padding-bottom: 10px;
-    border-color: #354649;
-    border-style: outset;
-    border-width: 5px;
 }
 article p {
     margin-left: 35px;
+    text-shadow: 1px 1px #354649;
     color: white;
 }
 section{
     padding-bottom: 10px; 
-    border-color: #354649;
-    border-style: outset;
-    border-width: 5px;   
 }
 section table, td, th {
     border-style: solid;
@@ -160,6 +173,15 @@ footer {
     font-size: 20px;
     background-color: #354649;
     color: white;
+}
+footer p {
+    text-align: center;
+}
+footer p.contact {
+    background-color: #e0e7e9;
+}
+footer iframe {
+    width: 95%;
 }
 h1 {
     font-size: 30px;
@@ -176,4 +198,42 @@ h3 {
 p {
     font-size: 16px;
     color: #6c7a89;
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;    
+}
+.media a {
+    flex-grow: 1;
+    padding: 5px 5px 5px 5px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+}
+.gallery img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.gallery img:hover {
+    box-shadow: 10px 5px 5px black;
+}
 }
