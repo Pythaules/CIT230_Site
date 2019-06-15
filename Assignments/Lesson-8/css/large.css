@@ -1,27 +1,42 @@
-/* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 800px) {
+		.hamburger { 
+			display: none;	
+		}
+		header,	nav {	
+		margin: 0 auto;	
+		max-width: 90%;
+	}
+	h1 { 
+		text-align: center; 
+	}
+	nav li {
+		font-size: 25px;
+	}
+	.navi {	
+	
+		background-color:  #354649;
+		overflow: hidden;	
+		text-align: center;	
+	}
 
-    header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
-    }
+	.navi li { 
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.navi a {	
+		color:  #354649;
+		padding: .5rem;	
+		text-align: center;	
+		text-decoration: none;}
+	.navi a:hover {	
+		color: #000; 
+		background-color: #a3c6c4;	
+		border-radius: 20px;
+	}
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
-/*----------- BODY --------------*/
 
-
-
-/*----------- HEADER --------------*/
-
-
-
-/*----------- NAVIGATION --------------*/
-
-
-
-/*----------- MAIN --------------*/
-
-
-
-/*----------- FOOTER --------------*/
-    
-} /* end of media query */
+}

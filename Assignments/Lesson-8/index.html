@@ -1,63 +1,53 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
-
-<!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
-
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-
-
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-
-
-     
+    <meta charset="utf-8">
+    <title>Unrelated Weather</title>
+    <meta name="author" content="Michael Smith">
+    <meta name="description" content="All the best weather in one place">
+    <link rel="icon" href="images/weathericon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
+
 <body>
-<!-- HEADER HERE -->
-	<header>
- <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
+    <header>
+        <img src="images/monarch.png" alt="The site logo">
+        <h1>Unrelated Weather</h1>
+        <h2>4 cities with nothing in common but the weather!</h2>
+        <div class="motto">"Tracking weather to keep you safe."</div>
     </header>
-    
-    
-<!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navi">
+            <li class="current"><a href="index.html"><br>Home</a></li>
+            <li><a href="preston.html"><br>Preston</a></li>
+            <li><a href="sodasprings.html">Soda<br>Springs</a></li>
+            <li><a href="fishhaven.html">Fish<br>Haven</a></li>
+            <li><a href="stormcenter.html">Storm<br>Center</a></li>
+            <li><a href="gallery.html"><br>Gallery</a></li>
         </ul>
     </nav>
-    
-    
-<!-- CONTENT HERE -->
-<main>
-    <h1>Course Proposal Application</h1>
-        
-
-          
-        
+    <main>
+        <h3>The city of Preston</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui. Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus. Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id
+        rhoncus. Cras velit leo, maximus et finibus a, molestie eget quam.
     </main>
-    
-<!-- FOOTER HERE -->   
+    <article>
+        <h3>Article about Preston</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui. Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus. Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id
+        rhoncus. Cras velit leo, maximus et finibus a, molestie eget quam.
+    </article>
+    <section>
+        <h3>Section about something besides Preston</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui. Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus. Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id
+        rhoncus. Cras velit leo, maximus et finibus a, molestie eget quam.
+    </section>
     <footer>
-        &copy; 2018 &bull; Paul Cheney &bull; 123-555-6789
+        <p>Copyright &copy; 2019 | Unrelated Weather | Virginia Beach<span id="currentdate">Current Date</span></p>
     </footer>
-<script src="js/scripts.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
 </body>
-</html>
