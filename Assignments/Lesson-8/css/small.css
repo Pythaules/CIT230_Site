@@ -230,4 +230,55 @@ p {
 .gallery img:hover {
     box-shadow: 10px 5px 5px black;
 }
+form {
+    background-color: #e0e7e9;
+    box-shadow: 10px 5px 5px #a3c6c4;
+}
+form fieldset {
+    margin: 1rem 2rem 0 0 ;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #354649;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+form label.user, form label.storm {
+    display: block;
+    padding-top: 1rem;
+}
+form label.danger{
+    display: block;
+    padding: .75rem 0;
+    border: solid 1px lightgrey;
+    border-radius: 4px;
+    width: 10rem;
+}
+form label.user input, form label.storm input, form label.storm select form, label.storm textarea {
+    display: block;
+    font-size: 1 rem;
+    border: solid 1px lightgrey;
+    border-radius: 4px;
+    padding: .75rem;
+
+}
+#stormregion {
+    width: 10rem;
+}
+#stormregion option:hover {
+    font-size: 20px;
+}
+form .submitBtn {
+    border: none;
+    background-color: #354649;
+    color: #e0e7e9;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    width: 20rem;
+}
 }
