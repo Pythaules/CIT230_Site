@@ -260,7 +260,7 @@ form label.danger{
 }
 form label.user input, form label.storm input, form label.storm select form, label.storm textarea {
     display: block;
-    font-size: 1 rem;
+    font-size: 1rem;
     border: solid 1px lightgrey;
     border-radius: 4px;
     padding: .75rem;
@@ -280,5 +280,4 @@ form .submitBtn {
     padding: .75rem 1.5rem;
     margin: 1rem 0 2rem 2%;
     width: 20rem;
-}
 }

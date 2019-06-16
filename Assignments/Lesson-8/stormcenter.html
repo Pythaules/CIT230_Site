@@ -39,7 +39,7 @@
                     <legend>User Information</legend>
                     <label class="user">Full Name*<input type="text" name="fname" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" required></label>
                     <label class="user">Email Address<input type="email" name="email" placeholder="storm@stormcenter.com"></label>
-                    <label class="user">Phone Number*<input type="tel" name="phone" pattern="(?=.*\d).{10,}" placeholder="########## "required></label>
+                    <label class="user">Phone Number*<input type="tel" name="phone" pattern="(?=.*\d).{10,}" placeholder="##########" required></label>
                     <label class="user">Zip Code*<input type="number" name="zip" placeholder="#####" required></label>
                 </fieldset>
                 <fieldset> 
@@ -56,7 +56,7 @@
                     </datalist>
                     <label class="storm" for="severity">Severaty Rating (1 to 10):</label>
                     <input type="range" id="severity" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="severityvalue">1</span></label>
+                    <span id="severityvalue">1</span>
                     <label class="storm">Storm Region</label>
                         <select id="stormregion" size="3">
                             <option disabled selected>Select Region</option>
@@ -75,10 +75,6 @@
                 </fieldset>
             </form>
     </main>
-    <section>
-       
-    
-    </section>
     <footer>
             <div class="media">
               <a href="#" class="fa fa-facebook"></a>
