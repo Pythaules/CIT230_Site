@@ -1,16 +1,16 @@
 /* || general styles */
 
 html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
   
   body {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
   }
   
   h1, h2 {
-    font-family: 'Faster One', cursive;
+    font-family: 'Ubuntu', cursive;
   }
   
   /* header styles */
@@ -29,8 +29,11 @@ html {
   /* section styles */
   
   section article {
-    width: 33%;
+    width: 32%;
     float: left;
+
+    margin: 0 5px 0 0;
+    box-shadow: 5px 5px lightgrey;
   }
   
   section p {
