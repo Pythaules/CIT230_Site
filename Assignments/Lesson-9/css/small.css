@@ -159,7 +159,6 @@ main {
     flex-direction: column;
     padding-bottom: 10px;
     font-size: 12px;
-    border: 1px solid red;
 }
 main p {
     width: 95%;
