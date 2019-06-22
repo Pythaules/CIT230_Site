@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+* {
+    font-family: Lato, sans-serif;
+    margin: 0px 5px 0px 5px;
+}    
+.hamburger { 
+    display: inline;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem; 
+}
+.navi { 
+    list-style: none; 
+    padding-left: 0; 
+}
+.navi li { 
+    display: none; 
+}
+
+@media only screen and (max-width: 600px) {
+header {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.navi.responsive { 
+    position: absolute; 
+    display: inline;
+    margin-top: 30px;
+    top: 2.0rem;
+    right: 1.25rem; 
+    width: 1in;
+}
+.navi.responsive li { 
+    display: flex;
+    font-size: 20px;
+    background-color: #e0e7e9;
+    border-color: #354649;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.navi.responsive li a {	
+    text-align: center;	
+}
+.navi.responsive li:hover { 
+    background-color: #a3c6c4;
+    color: darkblue;
+}
+.navi.responsive li a:active {
+    background-color: #a3c6c4;
+    color: darkblue;
+}
+.navi.responsive li a.current {
+    background-color: #a3c6c4;
+}
+.forcast {
+    display: none;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+}
+
+head {
+
+}
+
+body {
+
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #a3c6c4;
+    color: #354649;
+}
+.title {
+    display: flex;
+}
+header img {
+    height: 50px;
+}
+header h1 {
+    font-size: 40px;
+}
+header h2 {
+    font-size: 25px;
+}
+header div.motto {
+    font-size: 30px;
+    background-color: #e0e7e9;
+    color: #354649;
+}
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #354649;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav li {
+    background-color: #e0e7e9;
+    border-color: #354649;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 20px;
+}
+nav li a {
+    text-decoration: none;
+    justify-content: center;
+    background-color: transparent;
+    color: #354649;
+}
+nav li.current {
+    background-color: #a3c6c4;
+}
+.navi {
+    
+}
+
+.navi li:hover {
+    background-color: #a3c6c4;
+    color: #354649;
+}
+.navi li a:active {
+    background-color: #a3c6c4;
+    color: darkblue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+main p {
+    width: 95%;
+}
+article {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+}
+article.preston {
+    background-image: url("../images/rainy-small.jpg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+article p {
+    margin-left: 35px;
+    text-shadow: 1px 2px #354649;
+    color: white;
+}
+section{
+    padding-bottom: 10px; 
+}
+section table, td, th {
+    border-style: solid;
+    border-width: 2px;
+
+}
+footer {
+    font-size: 20px;
+    background-color: #354649;
+    color: white;
+}
+footer p {
+    text-align: center;
+}
+footer p.contact {
+    background-color: #e0e7e9;
+}
+footer iframe {
+    width: 95%;
+}
+h1 {
+    font-size: 30px;
+    color: #354649;
+}
+h2 {
+    font-size: 25px;
+    color: #354649;
+}
+h3 {
+    font-size: 20px;
+    color: #354649;
+}
+p {
+    font-size: 16px;
+    color: #6c7a89;
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;    
+}
+.media a {
+    flex-grow: 1;
+    padding: 5px 5px 5px 5px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .gallery {
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+}
+.gallery img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.gallery img:hover {
+    box-shadow: 10px 5px 5px black;
+}
+form {
+    background-color: #e0e7e9;
+    box-shadow: 10px 5px 5px #a3c6c4;
+}
+form fieldset {
+    margin: 1rem 2rem 0 0 ;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #354649;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+form label.user, form label.storm {
+    display: block;
+    padding-top: 1rem;
+}
+form label.danger{
+    display: block;
+    padding: .75rem 0;
+    border: solid 1px lightgrey;
+    border-radius: 4px;
+    width: 10rem;
+}
+form label.user input, form label.storm input, form label.storm select form, label.storm textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px lightgrey;
+    border-radius: 4px;
+    padding: .75rem;
+
+}
+#stormregion {
+    width: 10rem;
+}
+#stormregion option:hover {
+    font-size: 20px;
+}
+form .submitBtn {
+    border: none;
+    background-color: #354649;
+    color: #e0e7e9;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    width: 20rem;
+}

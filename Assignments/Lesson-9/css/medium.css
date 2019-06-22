@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+.hamburger {
+    display:none;
+}
+nav li {
+    font-size: 20px;
+}
+.navi {	
+	
+    background-color:  #354649;
+    text-align: center;	
+}
+.navi li { 
+    display: flex;
+    justify-content: center;
+}
+.navi a {	
+    color:  #354649;
+    text-align: center;	
+    text-decoration: none;}
+.navi a:hover {	
+    color: #000; 
+    background-color: #a3c6c4;	
+    border-radius: 20px;
+}
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
