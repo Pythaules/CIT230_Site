@@ -8,6 +8,8 @@
     position: absolute;
     top: 2.0rem;
     right: 1.25rem; 
+    -webkit-animation: pulse 1.2s linear infinite;
+    animation: pulse 1.2s linear infinite;
 }
 .navi { 
     list-style: none; 
@@ -75,8 +77,10 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #a3c6c4;
     color: #354649;
+    border-radius: 10px;
 }
 .title {
     display: flex;
@@ -98,7 +102,9 @@ header div.motto {
 nav {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
     background-color: #354649;
+    border-radius: 5px;
 }
 nav ul {
     display: flex;
@@ -124,10 +130,22 @@ nav li.current {
 .navi {
     
 }
-
+/* Pulse */
+@-webkit-keyframes pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
 .navi li:hover {
     background-color: #a3c6c4;
     color: #354649;
+    -webkit-animation: pulse 1.2s linear infinite;
+    animation: pulse 1.2s linear infinite;
 }
 .navi li a:active {
     background-color: #a3c6c4;
@@ -144,10 +162,37 @@ main {
 main p {
     width: 95%;
 }
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+    max-width: 100%;
+    background-color: #e0e7e9;
+    border-radius: 10px;
+}
 article {
     display: flex;
-    height: 200px;
+    min-width: 95%;
+    max-height: 100%;
     flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+article p.motto {
+    font-weight: bold;
+}
+article img {
+    max-width: 100%;
+    max-height: 100%;
+}
+article h2 {
+    margin-bottom: 10px;
+}
+article p {
+    padding: 2px 2px 2px 10px;
+    max-width: 100%;
+    text-align: center;
 }
 article.preston {
     background-image: url("../images/rainy-small.jpg");
@@ -155,23 +200,25 @@ article.preston {
     background-repeat: no-repeat;
     padding-bottom: 10px;
 }
-article p {
+article p.preston {
     margin-left: 35px;
     text-shadow: 1px 2px #354649;
     color: white;
+    text-align: unset;
 }
-section{
-    padding-bottom: 10px; 
+section.forcast {
+    display: block;
 }
+
 section table, td, th {
     border-style: solid;
     border-width: 2px;
-
 }
 footer {
     font-size: 20px;
     background-color: #354649;
     color: white;
+    padding-top: 10px;
 }
 footer p {
     text-align: center;
@@ -202,7 +249,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;    
+    background-color: white;  
+    min-height:  20px;  
 }
 .media a {
     flex-grow: 1;

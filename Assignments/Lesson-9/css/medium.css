@@ -29,5 +29,13 @@ nav li {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+article {
+  min-width: 50%;
+}
+
 
 }
