@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Unrelated Weather</title>
+    <meta name="author" content="Michael Smith">
+    <meta name="description" content="All the best weather in one place">
+    <link rel="icon" href="images/weathericon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <img src="images/monarch.png" alt="The site logo">
+            <h1>Unrelated Weather</h1>
+        </div>
+        <div>
+            <h2>Nothing in common but the weather!</h2>
+            <h3>"Tracking weather to keep you safe."</h3>
+        </div>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navi">
+            <li><a href="index.html"><br>Home</a></li>
+            <li><a href="preston.html"><br>Preston</a></li>
+            <li><a href="sodasprings.html">Soda<br>Springs</a></li>
+            <li><a href="fishhaven.html">Fish<br>Haven</a></li>
+            <li class="current"><a href="stormcenter.html">Storm<br>Center</a></li>
+            <li><a href="gallery.html"><br>Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label class="user">Full Name*<input type="text" name="fname" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" required></label>
+                    <label class="user">Email Address<input type="email" name="email" placeholder="storm@stormcenter.com"></label>
+                    <label class="user">Phone Number*<input type="tel" name="phone" pattern="(?=.*\d).{10,}" placeholder="##########" required></label>
+                    <label class="user">Zip Code*<input type="number" name="zip" placeholder="#####" required></label>
+                </fieldset>
+                <fieldset> 
+                    <legend>Storm Information</legend>   
+                    <label class="storm">Storm Date*<input type="date" name="sdate" required></label>
+                    <label class="storm">Storm Type*<input list="stormtype" name="stype" required></label>
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado"> 
+                        <option value="Snow Storm">       
+                    </datalist>
+                    <label class="storm" for="severity">Severaty Rating (1 to 10):</label>
+                    <input type="range" id="severity" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="severityvalue">1</span>
+                    <label class="storm">Storm Region</label>
+                        <select id="stormregion" size="3">
+                            <option disabled selected>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Sugar City">Sugar City</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    <label class="storm">User in danger Level</label>
+                    <label class="danger"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="danger"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="danger"><input type="radio" name="danger" value="no">No</label>
+                </fieldset>
+                <fieldset>
+                    <label class="storm">Additional infromation and comments<textarea name="addinfo" cols="50"></textarea></label>
+                    <button class="submitBtn" name="submit">Send Storm Alert</button>
+                </fieldset>
+            </form>
+    </main>
+    <footer>
+            <div class="media">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+            </div>
+              <p class="contact">109 Maple Ave, Preston, MD 21655<br>&#9742; 999-999-9999<br>&#9993; webmaster@unweather.cim</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12453.012615025178!2d-75.9157027163695!3d38.711996467072204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b843561ebfabfd%3A0x5aba853f11e30720!2sPreston%2C+MD+21655!5e0!3m2!1sen!2sus!4v1559865017481!5m2!1sen!2sus"></iframe>
+              <p>Copyright &copy; 2019 | Unrelated Weather | Virginia Beach<span id="currentdate">Current Date</span></p>
+    </footer>
+        <script src="scripts/severity.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+</body>
+</html>
