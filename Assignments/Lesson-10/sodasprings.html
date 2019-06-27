@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Unrelated Weather</title>
+    <meta name="author" content="Michael Smith">
+    <meta name="description" content="All the best weather in one place">
+    <link rel="icon" href="images/weathericon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <img src="images/monarch.png" alt="The site logo">
+            <h1>Unrelated Weather</h1>
+        </div>
+        <div>
+            <h2>Nothing in common but the weather!</h2>
+            <h3>"Tracking weather to keep you safe."</h3>
+        </div>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navi">
+            <li><a href="index.html"><br>Home</a></li>
+            <li><a href="preston.html"><br>Preston</a></li>
+            <li class="current"><a href="sodasprings.html">Soda<br>Springs</a></li>
+            <li><a href="fishhaven.html">Fish<br>Haven</a></li>
+            <li><a href="stormcenter.html">Storm<br>Center</a></li>
+            <li><a href="gallery.html"><br>Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <img src="images/preston-original.jpeg" alt="Preston City" sizes="80vw"
+              srcset="images/preston200.jpg 400w,
+                      images/preston500.jpg 500w,
+                      images/preston800.jpg 800w,
+                      images/preston1100.jpg 1100w">
+        </picture>
+        <h3>The city of Soda Springs</h3>
+        <p>Lorem ipsum dolor sit amet, ius odio consul ei, per ex viris possim, ut per numquam intellegam. An vidit dolore oporteat mel. Sit dicat appareat forensibus id. Ea his stet sanctus feugait, epicurei deseruisse ad eam. Usu etiam reformidans id, dolorum elaboraret per eu, ex tale epicuri gloriatur mel. Usu no munere postea ornatus, assum civibus comprehensam ut sed.  No cum saepe nullam nostrud. Quaeque commune in pro. Qui vidit mediocrem ut, clita homero meliore id usu. Te facete mollis abhorreant vix, eos pertinacia referrentur ei. In doming deserunt maluisset quo, cu saepe quaestio qui.</p>
+    </main>
+    <footer>
+        <div class="media">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+        </div>
+          <p class="contact">109 Maple Ave, Preston, MD 21655<br>&#9742; 999-999-9999<br>&#9993; webmaster@unweather.cim</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12453.012615025178!2d-75.9157027163695!3d38.711996467072204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b843561ebfabfd%3A0x5aba853f11e30720!2sPreston%2C+MD+21655!5e0!3m2!1sen!2sus!4v1559865017481!5m2!1sen!2sus"></iframe>
+          <p>Copyright &copy; 2019 | Unrelated Weather | Virginia Beach<span id="currentdate">Current Date</span></p>
+      </footer> 
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
