@@ -12,7 +12,7 @@ weatherObject.onload = function () {
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
 
-    const iconcode = weatherInfo[0].icon;
+    const iconcode = weatherInfo.weather[0].icon;
     console.log(iconcode);
 
     //const icon_path = "//openweathermap.org/img/w/" 
