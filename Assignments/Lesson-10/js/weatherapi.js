@@ -9,12 +9,12 @@ weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
 
-    document.getElementById('place').innerHTML = weatherData.name;
+    //document.getElementById('place').innerHTML = weatherData.name;
     document.getElementById('currentTemp').innerHTML = weatherData.main.temp;
-    document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
+    //document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
 
-    const iconcode = weatherData.weather[0].icon;
-    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
-    document.getElementById('weather_icon').src = icon_path;
+    //const iconcode = weatherData.weather[0].icon;
+    //const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
+    //console.log(icon_path);
+    //document.getElementById('weather_icon').src = icon_path;
 }
