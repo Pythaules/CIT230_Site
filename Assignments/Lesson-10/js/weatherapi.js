@@ -10,7 +10,7 @@ weatherRequest.onload = function () {
     console.log(weatherData);
 
     //document.getElementById('place').innerHTML = weatherData.name;
-    document.getElementById('currentTemp').innerHTML = weatherData.main.temp;
+    document.getElementById('current-temp').innerHTML = weatherData.main.temp;
     //document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
 
     //const iconcode = weatherData.weather[0].icon;
