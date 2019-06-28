@@ -26,7 +26,7 @@ apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
 forecastPull.send();
 
-
+const lists = 0;
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
     console.log(forecastData);
