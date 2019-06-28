@@ -36,7 +36,7 @@ function forecastParse(jsonObj) {
     for (l = 0; l < foreCasts.length; l++) {
         if (foreCasts[l].dt_txt.includes("18:00:00"))
         populateForecast(foreCasts[l]);
-    
+        console.log(foreCasts);
     }
 }
 
