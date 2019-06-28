@@ -29,11 +29,21 @@ forecastPull.send();
 
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
-    let foreCasts = JSON.parse(forecastData.responseText);
     console.log(forecastData);
-    for (l = 0; l < forecastData.list.length; l++) {
+    for (l = 0; l < forecastData.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
-        return new foreCasts;
-        console.log(foreCasts);
+        populateForecast(foreCasts[l]);
 }
+    
+function populateForecast(foreCasts[l]) {
+    forecastList = foreCasts.push();
+    
+        console.log(forecastList);
+    }
 }
+
+    document.getElementById('firD').innerHTML = lists[0].main.temp;
+    document.getElementById('secD').innerHTML = lists[1].main.temp;
+    document.getElementById('thiD').innerHTML = lists[2].main.temp;
+    document.getElementById('fouD').innerHTML = lists[3].main.temp;
+    document.getElementById('fifD').innerHTML = lists[4].main.temp;
