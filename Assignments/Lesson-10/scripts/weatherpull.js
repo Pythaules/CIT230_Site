@@ -29,10 +29,11 @@ forecastPull.send();
 
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
+    let foreCasts = JSON.parse(forecastData.responseText);
     console.log(forecastData);
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
-        foreCasts = JSON.parse(forecastData.list[l]);
+        return new foreCasts;
         console.log(foreCasts);
 }
 }
