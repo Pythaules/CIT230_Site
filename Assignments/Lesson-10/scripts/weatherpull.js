@@ -32,11 +32,12 @@ forecastPull.onload = function() {
     console.log(forecastData);
     for (l = 0; l < forecastData.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
-        populateForecast(foreCasts[l]);
+        populateForecast(forecastData[l]);
+    }
 }
     
-function populateForecast(foreCasts[l]) {
-    forecastList = foreCasts.push();
+function populateForecast(forecastData[l]) {
+    forecastList = forecastData.push();
     
         console.log(forecastList);
     }
