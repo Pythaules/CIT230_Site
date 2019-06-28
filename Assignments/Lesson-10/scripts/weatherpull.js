@@ -26,15 +26,16 @@ apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
 forecastPull.send();
 
-
+lists = []
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
     console.log(forecastData);
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
-        //console.log(forecastData.list[l]);
+        console.log(forecastData.list[l]);
+        lists.append(forecastData.list[l])
         //var lists = lists.push(forecastData.list[l]);
-        return lists = JSON.parse(forecastData.list[l]);
+        //return lists = JSON.parse(forecastData.list[l]);
         //lists.push(forecastData.list[l]);
     }
 }
