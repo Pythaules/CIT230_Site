@@ -35,11 +35,11 @@ forecastPull.onload = function() {
         //console.log(forecastData.list[l]);
         //var lists = lists.push(forecastData.list[l]);
         var lists = JSON.parse(forecastData.list[l]);
-        lists.push(forecastData.list[l]);
+        //lists.push(forecastData.list[l]);
     }
 }
     
-    document.getElementById('firD').innerHTML = forecastData.list[0].main.temp;
+    document.getElementById('firD').innerHTML = lists[0].main.temp;
     document.getElementById('secD').innerHTML = forecastData.list[1].main.temp;
     document.getElementById('thiD').innerHTML = forecastData.list[2].main.temp;
     document.getElementById('fouD').innerHTML = forecastData.list[3].main.temp;
