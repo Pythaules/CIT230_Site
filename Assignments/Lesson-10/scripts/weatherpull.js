@@ -35,20 +35,4 @@ forecastPull.onload = function() {
         return new foreCasts(l);
         console.log(foreCasts);
 }
-    
-/* function forecastParse(jsonObj) {
-    foreCasts = jsonObj['list'];
-    
-        console.log(foreCasts);
-    }
 }
-
-function populateForecast(foreCasts) {
-    var lists = jsonObj;
-
-    document.getElementById('firD').innerHTML = lists[0].main.temp;
-    document.getElementById('secD').innerHTML = lists[1].main.temp;
-    document.getElementById('thiD').innerHTML = lists[2].main.temp;
-    document.getElementById('fouD').innerHTML = lists[3].main.temp;
-    document.getElementById('fifD').innerHTML = lists[4].main.temp;
-} */
