@@ -30,7 +30,7 @@ forecastPull.send();
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
     console.log(forecastData);
-    for (l = 0; l < forecastData.length; l++) {
+    for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         populateForecast(forecastData[l]);
     }
