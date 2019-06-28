@@ -38,7 +38,7 @@ forecastPull.onload = function() {
     }
 }
     
-    document.getElementById('firD').innerHTML = forecastData.lists[0].main.temp;
+    document.getElementById('firD').innerHTML = forecastData.list[0].main.temp;
     document.getElementById('secD').innerHTML = forecastData.list[1].main.temp;
     document.getElementById('thiD').innerHTML = forecastData.list[2].main.temp;
     document.getElementById('fouD').innerHTML = forecastData.list[3].main.temp;
