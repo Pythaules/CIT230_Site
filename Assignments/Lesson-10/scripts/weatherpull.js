@@ -26,18 +26,20 @@ apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
 forecastPull.send();
 
-const lists = [];
+const lists = new lists();
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
     console.log(forecastData);
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         console.log(forecastData.list[l]);
+        lists = forecastData.list[l];
+
     }
 }
     
-    document.getElementById('firD').innerHTML = lists[0].main.temp;
-    document.getElementById('secD').innerHTML = lists[1].main.temp;
-    document.getElementById('thiD').innerHTML = lists[2].main.temp;
-    document.getElementById('fouD').innerHTML = lists[3].main.temp;
-    document.getElementById('fifD').innerHTML = lists[4].main.temp;
+    document.getElementById('firD').innerHTML = forecastData.lists[0].main.temp;
+    document.getElementById('secD').innerHTML = forecastData.lists[1].main.temp;
+    document.getElementById('thiD').innerHTML = forecastData.lists[2].main.temp;
+    document.getElementById('fouD').innerHTML = forecastData.lists[3].main.temp;
+    document.getElementById('fifD').innerHTML = forecastData.lists[4].main.temp;
