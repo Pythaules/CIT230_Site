@@ -5,13 +5,6 @@ apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 weatherPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
 weatherPull.send();
 
-const forecastPull = new XMLHttpRequest();
-apiURL = "//api.openweathermap.org/data/2.5/forecast?";
-apiID = "id=5061036";
-apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
-forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
-forecastPull.send();
-
 weatherPull.onload = function() {
     let weatherData = JSON.parse(weatherPull.responseText);
     console.log(weatherData);
@@ -24,11 +17,35 @@ weatherPull.onload = function() {
     document.getElementById('currentWindChill').innerHTML = wChill
     document.getElementById('currentHumidity').innerHTML = weatherData.main.humidity;
     document.getElementById('currentWindSpeed').innerHTML = weatherData.wind.speed;
-
-
 }
+
+const forecastPull = new XMLHttpRequest();
+apiURL = "//api.openweathermap.org/data/2.5/forecast?";
+apiID = "id=5061036";
+apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
+forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
+forecastPull.send();
 
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
     console.log(forecastData);
+}
+    
+function forecastParse(jsonObj) {
+    foreCasts = jsonObj['list'];
+    for (l = 0; l < foreCasts.length; l++) {
+        if (foreCasts[l].dt_txt.includes("18:00:00"))
+        populateForecast(foreCasts[l]);
+    
+    }
+}
+
+function populateForecast(jsonObj) {
+    var lists = jsonObj;
+
+    document.getElementById('firD').innerHTML = lists[0].main.temp;
+    document.getElementById('secD').innerHTML = lists[1].main.temp;
+    document.getElementById('thiD').innerHTML = lists[2].main.temp;
+    document.getElementById('fouD').innerHTML = lists[3].main.temp;
+    document.getElementById('fifD').innerHTML = lists[4].main.temp;
 }
