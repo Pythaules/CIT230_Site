@@ -26,21 +26,24 @@ apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
 forecastPull.send();
 
+
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
     console.log(forecastData);
+    for (l = 0; l < forecastData.length; l++) {
+        if (forecastData.list[l].dt_txt.includes("18:00:00"))
+        return new foreCasts(l);
+        console.log(foreCasts);
 }
     
-function forecastParse(jsonObj) {
+/* function forecastParse(jsonObj) {
     foreCasts = jsonObj['list'];
-    for (l = 0; l < foreCasts.length; l++) {
-        if (foreCasts[l].dt_txt.includes("18:00:00"))
-        populateForecast(foreCasts[l]);
+    
         console.log(foreCasts);
     }
 }
 
-function populateForecast(jsonObj) {
+function populateForecast(foreCasts) {
     var lists = jsonObj;
 
     document.getElementById('firD').innerHTML = lists[0].main.temp;
@@ -48,4 +51,4 @@ function populateForecast(jsonObj) {
     document.getElementById('thiD').innerHTML = lists[2].main.temp;
     document.getElementById('fouD').innerHTML = lists[3].main.temp;
     document.getElementById('fifD').innerHTML = lists[4].main.temp;
-}
+} */
