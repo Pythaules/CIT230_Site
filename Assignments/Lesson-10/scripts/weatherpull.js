@@ -33,12 +33,12 @@ forecastPull.onload = function() {
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         console.log(forecastData.list[l]);
-        const lists = forecastData.list[l];
+        //const lists = forecastData.list[l];
 
     }
 }
     
-    document.getElementById('firD').innerHTML = forecastData.list[0].main.temp;
+    document.getElementById('firD').innerHTML = forecastData.lists[0].main.temp;
     document.getElementById('secD').innerHTML = forecastData.list[1].main.temp;
     document.getElementById('thiD').innerHTML = forecastData.list[2].main.temp;
     document.getElementById('fouD').innerHTML = forecastData.list[3].main.temp;
