@@ -36,12 +36,12 @@ forecastPull.onload = function() {
     }
 }
     
-function populateForecast(forecastData[l]) {
+function populateForecast(forecastData) {
     forecastList = forecastData.push();
     
         console.log(forecastList);
     }
-}
+
 
     document.getElementById('firD').innerHTML = lists[0].main.temp;
     document.getElementById('secD').innerHTML = lists[1].main.temp;
