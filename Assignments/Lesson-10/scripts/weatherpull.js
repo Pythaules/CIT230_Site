@@ -31,14 +31,20 @@ forecastPull.onload = function() {
     console.log(forecastData);
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
+        populateLists(forecastData.list[l]);
         //console.log(forecastData.list[l]);
-        JSON.parse(forecastData.list[l]).push(lists);
+        //JSON.parse(forecastData.list[l]).push(lists);
         //lists.append(forecastData.list[l])
         //var lists = lists.push(forecastData.list[l]);
         //return lists = JSON.parse(forecastData.list[l]);
         //lists.push(forecastData.list[l]);
     }
-    return lists;
+}
+
+function populateLists(jsonObj) {
+    var lists = jsonObj;
+    forecastList.append(lists);
+    console.log(forecastList);
 }
     
     //document.getElementById('firD').innerHTML = lists[0].main.temp;
