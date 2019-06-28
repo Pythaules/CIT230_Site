@@ -32,7 +32,7 @@ forecastPull.onload = function() {
     console.log(forecastData);
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
-        return new foreCasts(list[l]);
+        let foreCasts = JSON.parse(forecastData.list[l]);
         console.log(foreCasts);
 }
 }
