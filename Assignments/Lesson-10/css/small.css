@@ -172,6 +172,10 @@ section {
     background-color: #e0e7e9;
     border-radius: 10px;
 }
+section.preston {
+    display: flex;
+    flex-direction: column;
+}
 article {
     display: flex;
     min-width: 95%;
