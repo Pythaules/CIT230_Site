@@ -32,15 +32,14 @@ forecastPull.onload = function() {
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         populateLists(forecastData.list[l]);
-        console.log(forecastData.list[l]);
+        //console.log(forecastData.list[l]);
     }
 }
 
 function populateLists(jsonObj) {
     var lists = jsonObj;
-    var forecastList = forecastList + lists;
+    const forecastList = forecastList + lists;
     console.log(forecastList);
-
 }
     
     //document.getElementById('firD').innerHTML = lists[0].main.temp;
