@@ -207,11 +207,12 @@ article p.preston {
     color: white;
     text-align: unset;
 }
-article#forecast {
-    display: block;
-    border: 5px solid red
+#forecast {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid red;
 }
-section.forcast {
+.forcast {
     display: none;
 }
 
