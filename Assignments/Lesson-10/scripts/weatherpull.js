@@ -39,12 +39,15 @@ forecastPull.onload = function() {
 function populateLists(jsonObj) {
     var lists = jsonObj;
 
+    var myDiv = document.createElement('div');
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
 
     myPara1.textContent = lists.dt_txt;
     myPara2.textContent = lists.main.temp;
 
-    article.appendChild(myPara1);
-    article.appendChild(myPara2);
+    myDiv.appendChild(myPara1);
+    myDiv.appendChild(myPara2);
+
+    article.appendChild(myDiv);
 }
