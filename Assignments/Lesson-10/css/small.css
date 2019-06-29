@@ -207,8 +207,12 @@ article p.preston {
     color: white;
     text-align: unset;
 }
-section.forcast {
+article#forecast {
     display: block;
+    border: 5px solid red
+}
+section.forcast {
+    display: none;
 }
 
 section table, td, th {
