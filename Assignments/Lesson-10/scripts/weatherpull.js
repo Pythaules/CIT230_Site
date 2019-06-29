@@ -32,19 +32,22 @@ forecastPull.onload = function() {
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         populateLists(forecastData.list[l]);
-        //console.log(forecastData.list[l]);
+        console.log(forecastData.list[l]);
     }
 }
 
 function populateLists(jsonObj) {
     var lists = jsonObj;
-    var forecastList = forecastList + lists;
-    //console.log(forecastList);
+
+    var myArticle = document.createElement('article');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+
+    myPara1.textContent = lists.dt_txt;
+    myPara2.textContent = lists.main.temp;
+
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+
+    section.appendChild(myArticle);
 }
-console.log(forecastList);
-    
-    //document.getElementById('firD').innerHTML = lists[0].main.temp;
-    //document.getElementById('secD').innerHTML = forecastData.list[1].main.temp;
-    //document.getElementById('thiD').innerHTML = forecastData.list[2].main.temp;
-    //document.getElementById('fouD').innerHTML = forecastData.list[3].main.temp;
-    //document.getElementById('fifD').innerHTML = forecastData.list[4].main.temp;
