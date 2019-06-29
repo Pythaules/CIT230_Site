@@ -46,6 +46,7 @@ function populateLists(jsonObj) {
 
     myPara1.textContent = lists.dt_txt.substr(5, 5);
     myPara2.textContent = lists.main.temp;
+    myPara2 = myPara2 + '&#8457;';
 
 
     myDiv.appendChild(myPara1);
