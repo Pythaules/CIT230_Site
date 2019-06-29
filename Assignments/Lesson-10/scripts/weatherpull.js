@@ -47,7 +47,7 @@ function populateLists(jsonObj) {
     myPara2.textContent = lists.main.temp + ' &#8457;';
 
     myDiv.appendChild(myPara1);
-    myDiv.appendChild(myPara2 + );
+    myDiv.appendChild(myPara2);
 
     document.getElementById("forecast").appendChild(myDiv);
 }
