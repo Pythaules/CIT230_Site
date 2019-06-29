@@ -32,7 +32,7 @@ forecastPull.onload = function() {
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         populateLists(forecastData.list[l]);
-        console.log(forecastData);
+        console.log(forecastData.list[l]);
         //JSON.parse(forecastData.list[l]).push(lists);
         //lists.append(forecastData.list[l])
         //var lists = lists.push(forecastData.list[l]);
@@ -43,7 +43,7 @@ forecastPull.onload = function() {
 
 function populateLists(jsonObj) {
     var lists = jsonObj;
-    forecastList.append(lists);
+    forecastList.push(lists);
     console.log(forecastList);
 }
     
