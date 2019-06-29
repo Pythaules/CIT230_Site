@@ -165,17 +165,14 @@ main p {
 }
 section {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr;
     padding-bottom: 10px; 
     margin-bottom: 10px;
     max-width: 100%;
     background-color: #e0e7e9;
     border-radius: 10px;
 }
-section.preston {
-    display: flex;
-    flex-direction: column;
-}
+
 article {
     display: flex;
     min-width: 95%;
@@ -212,20 +209,18 @@ article p.preston {
     text-align: unset;
 }
 #forecast {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     border: 5px solid red;
-    min-width: 300px;
+}
+#forecast h3 {
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 #forecast p {
     border: 1px solid red;
     min-width: 50px;
 }
-.forcast {
-    display: none;
-}
-
 section table, td, th {
     border-style: solid;
     border-width: 2px;
