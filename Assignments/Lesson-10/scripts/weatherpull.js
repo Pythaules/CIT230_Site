@@ -43,7 +43,7 @@ function populateLists(jsonObj) {
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
 
-    myPara1.textContent = lists.dt_txt;
+    myPara1.textContent = lists.dt_txt.substr(5, 9);
     myPara2.textContent = lists.main.temp;
 
     myDiv.appendChild(myPara1);
