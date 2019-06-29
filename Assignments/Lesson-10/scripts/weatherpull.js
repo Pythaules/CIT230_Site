@@ -49,5 +49,5 @@ function populateLists(jsonObj) {
     myDiv.appendChild(myPara1);
     myDiv.appendChild(myPara2);
 
-    article.appendChild(myDiv);
+    document.getElementById("forecast").appendChild(myDiv);
 }
