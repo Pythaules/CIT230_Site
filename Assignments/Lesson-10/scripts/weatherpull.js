@@ -43,12 +43,13 @@ function populateLists(jsonObj) {
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
 
+
     myPara1.textContent = lists.dt_txt.substr(5, 5);
     myPara2.textContent = lists.main.temp;
 
+
     myDiv.appendChild(myPara1);
     myDiv.appendChild(myPara2);
-    myPara2.appendChild('&#8457;')
 
     document.getElementById("forecast").appendChild(myDiv);
 }
