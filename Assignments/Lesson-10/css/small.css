@@ -211,7 +211,7 @@ article p.preston {
     display: flex;
     flex-direction: row;
     border: 5px solid red;
-    flex-grow: inherit;
+    min-width: 300px;
 }
 #forecast p {
     border: 1px solid red;
