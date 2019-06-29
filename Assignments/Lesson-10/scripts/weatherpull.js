@@ -38,7 +38,7 @@ forecastPull.onload = function() {
 
 function populateLists(jsonObj) {
     var lists = jsonObj;
-    const forecastList = forecastList + lists;
+    var forecastList = forecastList + lists;
     //console.log(forecastList);
 }
 console.log(forecastList);
