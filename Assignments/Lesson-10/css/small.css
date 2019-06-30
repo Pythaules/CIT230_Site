@@ -57,7 +57,7 @@ header {
 .navi.responsive li a.current {
     background-color: #a3c6c4;
 }
-.forecast {
+article.forecast {
     display: none;
 }
 
