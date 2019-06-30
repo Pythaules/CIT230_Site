@@ -40,7 +40,7 @@ function populateLists(jsonObj) {
     var lists = jsonObj;
 
     var iconcode = lists.weather[0].icon;
-    var iconalt = weather[0].main;
+    var iconalt = lists.weather[0].main;
     var myDiv = document.createElement('div');
     var myPara1 = document.createElement('p');
     var myImg = document.createElement('img');
