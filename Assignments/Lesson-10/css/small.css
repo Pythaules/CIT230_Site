@@ -57,7 +57,7 @@ header {
 .navi.responsive li a.current {
     background-color: #a3c6c4;
 }
-#forecast {
+.forecast {
     display: none;
 }
 
@@ -173,7 +173,7 @@ section {
     background-color: #e0e7e9;
     border-radius: 10px;
     border: 1px solid red;
-    
+
 }
 
 article {
@@ -211,24 +211,24 @@ article p.preston {
     color: white;
     text-align: unset;
 }
-#forecast {
+.forecast {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: start;
 
 }
-#forecast div{
+.forecast div{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     min-height: 100%;
     border: 1px solid black;
 }
-#forecast h3 {
+.forecast h3 {
     grid-column-start: 1;
     grid-column-end: 6;
 }
-#forecast div img {
+.forecast div img {
     display: grid;
     grid-template: 1fr;
 }
