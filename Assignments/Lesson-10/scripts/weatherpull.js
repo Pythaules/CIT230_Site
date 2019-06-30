@@ -7,7 +7,7 @@ weatherPull.send();
 
 weatherPull.onload = function() {
     let weatherData = JSON.parse(weatherPull.responseText);
-    console.log(weatherData);
+    //console.log(weatherData);
     cTemp = weatherData.main.temp;
     cSpeed = weatherData.wind.speed;
     wChill = Math.round(35.74 + 0.6215 * cTemp - 35.75 * Math.pow(cSpeed, 0.16) + 0.4275 * cTemp * Math.pow(cSpeed, 0.16));
@@ -28,11 +28,11 @@ forecastPull.send();
 
 forecastPull.onload = function() {
     let forecastData = JSON.parse(forecastPull.responseText);
-    console.log(forecastData);
+    //console.log(forecastData);
     for (l = 0; l < forecastData.list.length; l++) {
         if (forecastData.list[l].dt_txt.includes("18:00:00"))
         populateLists(forecastData.list[l]);
-        console.log(forecastData.list[l]);
+        //console.log(forecastData.list[l]);
     }
 }
 
