@@ -172,8 +172,6 @@ section {
     max-width: 100%;
     background-color: #e0e7e9;
     border-radius: 10px;
-    border: 1px solid red;
-
 }
 
 article {
@@ -229,7 +227,7 @@ article p.preston {
 }
 #forecast div img {
     display: grid;
-    min-width: 100%;
+    height: 50px;
     grid-template: 1fr;
 }
 section table, td, th {
