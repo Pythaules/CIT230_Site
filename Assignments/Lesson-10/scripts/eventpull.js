@@ -23,8 +23,8 @@ function parseTowns(jsonObj) {
 function parseEvent(jsonObj) {
     currentEvent = jsonObj['events'];
     console.log(currentEvent)
-    for (e = 0; e < currentEvent.events.length; e++) {
-        populateEvents(currentEvent.events[e]);
+    for (e = 0; e < currentEvent.length; e++) {
+        populateEvents(currentEvent[e]);
         //console.log(currentEvent)
     }
 }
