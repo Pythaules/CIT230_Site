@@ -218,20 +218,16 @@ article p.preston {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-
+    border: 1px solid black;
+    padding: 0px;
 }
 #forecast h3 {
     grid-column-start: 1;
     grid-column-end: 6;
 }
-#forecast p {
-    border: 1px solid black;
-}
 #forecast div img {
     display: grid;
     grid-template: 1fr;
-
-    border: 1px solid red;
 }
 section table, td, th {
     border-style: solid;
