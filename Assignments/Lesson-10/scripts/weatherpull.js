@@ -56,5 +56,5 @@ function populateLists(jsonObj) {
     myDiv.appendChild(myImg);
     myDiv.appendChild(myPara2);
 
-    document.getElementsByClassName("forecast").appendChild(myDiv);
+    document.getElementById("forecast").appendChild(myDiv);
 }
