@@ -15,8 +15,26 @@ function parseTowns(jsonObj) {
     currentTowns = jsonObj['towns'];
     for (t = 0; t < currentTowns.length; t++) {
         if (currentTowns[t].name == 'Preston')
-        populateTownData(currentTowns[t]);
+        parseEvent(currentTowns[t]);
         console.log(currentTowns[t]);
     }
+}
+
+function parseEvent(jsonObj) {
+    currentEvent = jsonObj['events'];
+    for (e = 0; e < currentEvent.events.length; e++) {
+        populateEvents(currentEvent.events[e]);
+        console.log(currentEvent)
+    }
+}
+
+function populateEvents(jsonObj) {
+    var event = jsonObj;
+
+    var myPara = document.createElement('p');
+
+    myPara.textContent = event.events;
+
+    document.getElementById("events").appendChild(myPara);
 }
 
