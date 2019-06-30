@@ -211,12 +211,13 @@ article p.preston {
 #forecast {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    justify-content: start;
+
 }
 #forecast div{
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
 
 }
 #forecast h3 {
