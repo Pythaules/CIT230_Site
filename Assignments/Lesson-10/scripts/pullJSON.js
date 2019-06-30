@@ -55,5 +55,5 @@ function populateTownData(jsonObj) {
     myArticle.appendChild(myPara4);
     myArticle.appendChild(myImg);
 
-    section.appendChild(myArticle);
+    document.getElementById("index").appendChild(myArticle);
 }

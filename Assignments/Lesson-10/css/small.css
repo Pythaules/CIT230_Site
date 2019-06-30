@@ -65,6 +65,10 @@ article#forecast {
     display: grid;
     grid-template-columns: 1fr;
 }
+#index {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
 }
 

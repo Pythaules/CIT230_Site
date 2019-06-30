@@ -39,5 +39,9 @@ article {
 #forecast {
   display: grid;
 }
+#index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 }
