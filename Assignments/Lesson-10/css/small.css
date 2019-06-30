@@ -221,7 +221,6 @@ article p.preston {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    min-height: 100%;
     border: 1px solid black;
 }
 #forecast h3 {
