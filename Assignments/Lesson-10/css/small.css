@@ -57,7 +57,7 @@ header {
 .navi.responsive li a.current {
     background-color: #a3c6c4;
 }
-article#forecast {
+#forecast {
     display: none;
 }
 
@@ -172,6 +172,8 @@ section {
     max-width: 100%;
     background-color: #e0e7e9;
     border-radius: 10px;
+    border: 1px solid red;
+    
 }
 
 article {
