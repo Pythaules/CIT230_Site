@@ -212,7 +212,9 @@ article p.preston {
 #forecast {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 1fr 2fr 1fr;
     justify-content: start;
+    grid-gap: 1px;
 
 }
 #forecast div{
@@ -227,7 +229,6 @@ article p.preston {
 }
 #forecast div img {
     display: grid;
-    height: 50px;
     grid-template: 1fr;
 }
 section table, td, th {
