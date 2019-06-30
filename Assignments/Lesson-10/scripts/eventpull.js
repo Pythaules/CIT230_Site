@@ -22,15 +22,16 @@ function parseTowns(jsonObj) {
 
 function parseEvent(jsonObj) {
     currentEvent = jsonObj['events'];
-    console.log(currentEvent)
+    //console.log(currentEvent);
     for (e = 0; e < currentEvent.length; e++) {
         populateEvents(currentEvent[e]);
-        //console.log(currentEvent)
+        //console.log(currentEvent);
     }
 }
 
 function populateEvents(jsonObj) {
     var event = jsonObj;
+    console.log(event);
 
     var myPara = document.createElement('p');
 
