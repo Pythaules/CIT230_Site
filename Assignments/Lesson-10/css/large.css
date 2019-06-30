@@ -43,6 +43,7 @@
 	section {
 		display: grid;
 		grid-template-columns: 1fr;
+		justify-items: center;
 	  }
 	#forecast {
 		display: grid;
@@ -50,7 +51,6 @@
 	#index {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		justify-items: center;
-	  }
+	}
 	
 }
