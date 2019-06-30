@@ -212,7 +212,6 @@ article p.preston {
 #forecast {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 1fr 2fr 1fr;
     justify-content: start;
     grid-gap: 1px;
 
@@ -220,6 +219,7 @@ article p.preston {
 #forecast div{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     justify-items: center;
     border: 1px solid black;
 }
@@ -227,10 +227,7 @@ article p.preston {
     grid-column-start: 1;
     grid-column-end: 6;
 }
-#forecast div img {
-    display: grid;
-    grid-template: 1fr;
-}
+
 section table, td, th {
     border-style: solid;
     border-width: 2px;
