@@ -41,13 +41,17 @@ function populateLists(jsonObj) {
 
     var myDiv = document.createElement('div');
     var myPara1 = document.createElement('p');
+    var myImg = document.createElement('img');
     var myPara2 = document.createElement('p');
 
+    const iconcode = lists.weather[0].icon
 
     myPara1.textContent = lists.dt_txt.substr(5, 5);
+    myImg = "//openweathermap.org/img/w/" + iconcode + ".png";
     myPara2.textContent = lists.main.temp + 'degF';
    
     myDiv.appendChild(myPara1);
+    myDiv.appendChild(myImg)
     myDiv.appendChild(myPara2);
 
     document.getElementById("forecast").appendChild(myDiv);
