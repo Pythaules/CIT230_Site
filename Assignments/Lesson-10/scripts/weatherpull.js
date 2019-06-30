@@ -40,11 +40,12 @@ function populateLists(jsonObj) {
     var lists = jsonObj;
 
     var iconcode = lists.weather[0].icon;
+    var iconalt = weather[0].main;
     var myDiv = document.createElement('div');
     var myPara1 = document.createElement('p');
     var myImg = document.createElement('img');
         myImg.setAttribute("src", "//openweathermap.org/img/w/" + iconcode + ".png");
-        myImg.setAttribute("alt", weather[0].main);
+        myImg.setAttribute("alt", iconalt);
     var myPara2 = document.createElement('p');
 
     myPara1.textContent = lists.dt_txt.substr(5, 5);
