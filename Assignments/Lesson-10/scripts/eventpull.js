@@ -16,15 +16,16 @@ function parseTowns(jsonObj) {
     for (t = 0; t < currentTowns.length; t++) {
         if (currentTowns[t].name == 'Preston')
         parseEvent(currentTowns[t]);
-        console.log(currentTowns[t]);
+        //console.log(currentTowns[t]);
     }
 }
 
 function parseEvent(jsonObj) {
     currentEvent = jsonObj['events'];
+    console.log(currentEvent)
     for (e = 0; e < currentEvent.events.length; e++) {
         populateEvents(currentEvent.events[e]);
-        console.log(currentEvent)
+        //console.log(currentEvent)
     }
 }
 
