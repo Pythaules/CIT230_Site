@@ -50,7 +50,7 @@ function populateLists(jsonObj) {
 
     myPara1.textContent = lists.dt_txt.substr(5, 5);
     myImg.innerHTML;
-    myPara2.textContent = lists.main.temp.substr(0, 2) + 'degF';
+    myPara2.textContent = lists.main.temp.substr(0, 2);
    
     myDiv.appendChild(myPara1);
     myDiv.appendChild(myImg);
