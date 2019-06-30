@@ -35,7 +35,7 @@ function populateEvents(jsonObj) {
 
     var myPara = document.createElement('p');
 
-    myPara.textContent = event.events;
+    myPara.textContent = event;
 
     document.getElementById("events").appendChild(myPara);
 }
