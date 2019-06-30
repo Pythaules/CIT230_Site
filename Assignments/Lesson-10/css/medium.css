@@ -36,6 +36,8 @@ nav li {
 article {
   min-width: 50%;
 }
-
+#forecast {
+  display: grid;
+}
 
 }
