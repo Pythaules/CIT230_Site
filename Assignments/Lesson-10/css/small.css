@@ -221,7 +221,7 @@ article p.preston {
     border: 1px solid black;
 }
 #forecast img {
-    min-width: 90;
+    min-width: 90%;
     min-height: 90%;
     border: 1px solid red;
 }
