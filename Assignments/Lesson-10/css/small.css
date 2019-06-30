@@ -69,7 +69,9 @@ article#forecast {
     display: grid;
     grid-template-columns: 1fr;
   }
-
+section {
+    justify-items: center;
+}
 }
 
 head {
