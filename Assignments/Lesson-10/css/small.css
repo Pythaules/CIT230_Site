@@ -201,14 +201,14 @@ article p {
     max-width: 100%;
     text-align: center;
 }
-article.preston {
+#currentweather {
     background-image: url("../images/rainy-small.jpg");
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 10px;
 }
-article p.preston {
+p#currentweather {
     margin-left: 35px;
     text-shadow: 1px 2px #354649;
     color: white;
