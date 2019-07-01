@@ -69,7 +69,7 @@ article#forecast {
     display: grid;
     grid-template-columns: 1fr;
   }
-section {
+#preston {
     justify-items: center;
 }
 }

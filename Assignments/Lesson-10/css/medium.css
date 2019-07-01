@@ -29,7 +29,7 @@ nav li {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  section {
+  #preston {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
