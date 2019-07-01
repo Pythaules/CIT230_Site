@@ -202,12 +202,7 @@ article p {
     max-width: 100%;
     text-align: center;
 }
-#preston {
-    background-image: url("../images/rainy-small.jpg");
-    background-size: 400px;
-    background-repeat: no-repeat;
-    padding-bottom: 10px;
-}
+
 article p.preston {
     margin-left: 35px;
     text-shadow: 1px 2px #354649;
