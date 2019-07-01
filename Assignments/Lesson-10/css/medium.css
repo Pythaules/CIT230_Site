@@ -29,11 +29,7 @@ nav li {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #preston {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
+
 article {
   min-width: 50%;
 }

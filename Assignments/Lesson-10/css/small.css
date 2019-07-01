@@ -69,11 +69,7 @@ article#forecast {
     display: grid;
     grid-template-columns: 1fr;
   }
-#preston {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
+
 }
 
 head {

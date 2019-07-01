@@ -40,11 +40,6 @@
 	.gallery img:hover {
 		box-shadow: 10px 5px 5px black;
 	}
-	#preston {
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-items: center;
-	  }
 	#forecast {
 		display: grid;
 	}
