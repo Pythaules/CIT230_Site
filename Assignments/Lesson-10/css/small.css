@@ -57,7 +57,7 @@ header {
 .navi.responsive li a.current {
     background-color: #a3c6c4;
 }
-article#forecast {
+#forecast {
     display: none;
 }
 
@@ -179,10 +179,11 @@ section {
     border-radius: 10px;
 }
 article {
-    display: flex;
+    display: grid;
     min-width: 95%;
     max-height: 100%;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: center;
     margin: 5px;
     padding: 5px;
 }
