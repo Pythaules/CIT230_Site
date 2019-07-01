@@ -208,7 +208,7 @@ article p {
     background-position: center;
     padding-bottom: 10px;
 }
-p#currentweather {
+#currentweather p {
     margin-left: 35px;
     text-shadow: 1px 2px #354649;
     color: white;
