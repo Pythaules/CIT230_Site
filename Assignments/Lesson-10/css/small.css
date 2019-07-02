@@ -214,13 +214,6 @@ article p {
     color: white;
     text-align: unset;
 }
-#forecast {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    justify-items: center;
-    grid-gap: 1px;
-
-}
 #forecast div{
     display: grid;
     grid-template-columns: 1fr;

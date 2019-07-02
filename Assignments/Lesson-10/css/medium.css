@@ -35,6 +35,9 @@ article {
 }
 #forecast {
   display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-items: center;
+  grid-gap: 1px;
 }
 #index {
   display: grid;
