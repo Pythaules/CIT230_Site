@@ -13,16 +13,15 @@ request.onload = function() {
 
 function parseTowns(jsonObj) {
     currentTowns = jsonObj['towns'];
-    for (t = 0; t < currentTowns.length; t++) {
-        if (currentTowns[t].name == 'Preston')
-        populateTownData(currentTowns[t]);
+    if (window.location.pathname.includes("preston")) {
+        var townName = "Preston"
+    } else if (window.location.pathname.includes("fishhaven")) {
+        var townName = "Fish Haven"
+    } else if (window.location.pathname.includes("sodasprings")) {
+        var townName = "Soda Springs"
     }
     for (t = 0; t < currentTowns.length; t++) {
-        if (currentTowns[t].name == 'Soda Springs')
-        populateTownData(currentTowns[t]);
-    }
-    for (t = 0; t < currentTowns.length; t++) {
-        if (currentTowns[t].name == 'Fish Haven')
+        if (currentTowns[t].name == townName)
         populateTownData(currentTowns[t]);
     }
 }

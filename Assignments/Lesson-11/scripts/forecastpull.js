@@ -1,6 +1,14 @@
 const forecastPull = new XMLHttpRequest();
 apiURL = "//api.openweathermap.org/data/2.5/forecast?";
-apiID = "id=5061036";
+
+if (window.location.pathname.includes("preston")) {
+    var apiID = "id=5061036"
+} else if (window.location.pathname.includes("fishhaven")) {
+    var apiID = "id=5585010"
+} else if (window.location.pathname.includes("sodasprings")) {
+    var apiID = "id=5607916"
+}
+
 apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 forecastPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
 forecastPull.send();
