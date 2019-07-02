@@ -66,10 +66,11 @@ header {
     grid-template-columns: 1fr;
 }
 #index {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
   }
-
 }
 
 head {
