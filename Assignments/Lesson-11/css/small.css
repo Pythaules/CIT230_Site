@@ -171,6 +171,9 @@ main {
     background-color: #e0e7e9;
     border-radius: 10px;
 }
+main picture {
+    margin: 10px;
+}
 main p {
     width: 95%;
 }
