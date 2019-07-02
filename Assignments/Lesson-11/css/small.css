@@ -365,3 +365,6 @@ form .submitBtn {
     margin: 1rem 0 2rem 2%;
     width: 20rem;
 }
+#map {
+    height: 100%;
+}
