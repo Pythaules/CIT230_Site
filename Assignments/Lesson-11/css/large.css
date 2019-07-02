@@ -2,9 +2,12 @@
 		.hamburger { 
 			display: none;	
 		}
-		header,	nav {	
+		header {	
 		margin: 0 auto;	
 		max-width: 90%;
+	}
+	nav {
+		margin-top: 10px;
 	}
 	h1 { 
 		text-align: center; 

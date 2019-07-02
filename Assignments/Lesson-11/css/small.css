@@ -110,7 +110,9 @@ nav {
     flex-wrap: nowrap;
     justify-content: center;
     background-color: #354649;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+
 }
 nav ul {
     display: flex;
@@ -164,7 +166,10 @@ main {
     align-items: center;
     flex-direction: column;
     padding-bottom: 10px;
+    margin: 10px 0 10px 0;
     font-size: 12px;
+    background-color: #e0e7e9;
+    border-radius: 10px;
 }
 main p {
     width: 95%;
