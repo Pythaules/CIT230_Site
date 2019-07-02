@@ -1,0 +1,54 @@
+  @media only screen and (min-width: 800px) {
+		.hamburger { 
+			display: none;	
+		}
+		header,	nav {	
+		margin: 0 auto;	
+		max-width: 90%;
+	}
+	h1 { 
+		text-align: center; 
+	}
+	nav li {
+		font-size: 25px;
+	}
+	.navi {	
+	
+		background-color:  #354649;
+		overflow: hidden;	
+		text-align: center;	
+	}
+
+	.navi li { 
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.navi a {	
+		color:  #354649;
+		padding: .5rem;	
+		text-align: center;	
+		text-decoration: none;}
+	.navi a:hover {	
+		color: #000; 
+		background-color: #a3c6c4;	
+		border-radius: 20px;
+	}
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.gallery img:hover {
+		box-shadow: 10px 5px 5px black;
+	}
+	#forecast {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		justify-items: center;
+		grid-gap: 1px;
+	}
+	#index {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+}
