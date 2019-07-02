@@ -243,6 +243,7 @@ footer {
     color: white;
     padding-top: 10px;
     margin-top: 5px;
+    justify-items: center;
 }
 footer p {
     text-align: center;
@@ -284,16 +285,22 @@ p {
 .fa-facebook {
     background: #3B5998;
     color: white;
+    border-radius: 50px;
+    max-width: 20px;
   }
   
   .fa-twitter {
     background: #55ACEE;
     color: white;
+    border-radius: 50px;
+    max-width: 20px;
   }
   
   .fa-google {
     background: #dd4b39;
     color: white;
+    border-radius: 50px;
+    max-width: 20px;
   }
   .gallery {
     display: grid;
