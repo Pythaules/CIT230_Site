@@ -19,10 +19,21 @@ weatherPull.onload = function() {
     cTemp = weatherData.main.temp;
     cSpeed = weatherData.wind.speed;
     wChill = Math.round(35.74 + 0.6215 * cTemp - 35.75 * Math.pow(cSpeed, 0.16) + 0.4275 * cTemp * Math.pow(cSpeed, 0.16));
+    windDeg = weatherData.wind.deg;
 
     document.getElementById('currentWeather').innerHTML = weatherData.weather[0].main;
     document.getElementById('currentHigh').innerHTML = weatherData.main.temp_max;
     document.getElementById('currentWindChill').innerHTML = wChill
     document.getElementById('currentHumidity').innerHTML = weatherData.main.humidity;
     document.getElementById('currentWindSpeed').innerHTML = weatherData.wind.speed;
+    document.getElementById('windDirection').innerHTML = degToCompass(windDeg);
+}
+
+function degToCompass(num) { 
+    while( num < 0 ) num += 360 ;
+    while( num >= 360 ) num -= 360 ; 
+    val= Math.round( (num -11.25 ) / 22.5 ) ;
+    arr=["N","NNE","NE","ENE","E","ESE", "SE", 
+          "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"] ;
+    return arr[ Math.abs(val) ] ;
 }
