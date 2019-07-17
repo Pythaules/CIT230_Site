@@ -29,18 +29,8 @@ request.send();
 request.onload = function() {
     var showTemple = request.response;
     parseTemples(showTemple);
+    console.log(showTemple);
 }
 
-function parseTemples(jsonObj) {
-    currentTemple = jsonObj['temples'];
-    console.log(currentTemple);
-    if (document.getElementById("slide").src.includes(DC)) {
-        var templeCode = "DC"
-    }
-    for (t = 0; t < currentTemple.length; t++) {
-        if (currentTemple[t].code == templeCode)
-        parseSummary(currentTemple[t]);
-        console.log(currentTemple[t]);
-    }
-}
+
 
