@@ -48,7 +48,7 @@ function parseTemples(jsonObj) {
     for (t = 0; t < currentTemple.length; t++) {
         if (currentTemple[t].code == templeCode)
         parseSummary(currentTemple[t].summary);
-        console.log(currentTemple[t]);
+        console.log(currentTemple[t].summary);
     }
 }
 
