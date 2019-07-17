@@ -47,17 +47,16 @@ function parseTemples(jsonObj) {
 
     for (t = 0; t < currentTemple.length; t++) {
         if (currentTemple[t].code == templeCode)
-        parseSummary(currentTemple[t]);
+        parseSummary(currentTemple[t].summary);
         console.log(currentTemple[t]);
     }
 }
 
 function parseSummary(jsonObj) {
-    var currentSummary = jsonObj['summary'];
-    console.log(currentSummary);
+    var currentSummary = jsonObj;
+    //console.log(currentSummary);
     var myPara = document.createElement('p');
     myPara.textContent = currentSummary;
-
     document.getElementById("summary").appendChild(myPara);
 
 }
