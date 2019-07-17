@@ -1,0 +1,9 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.title img {
+    height: 200px;
+}
+#slide {
+    width: 400px;
+}

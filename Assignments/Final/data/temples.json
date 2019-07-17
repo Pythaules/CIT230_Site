@@ -1,0 +1,115 @@
+{
+    "temples" : [
+        {
+            "code": "DC",
+            "name": "Washington, DC Temple",
+            "address": "9900 Stoneybrook Dr, Kensington, MD 20895",
+            "phone": "(301) 588-0650",
+            "email": "",
+            "services" : [
+                "Clothing rental available",
+                "Cafeteria available",
+                "No patron housing available",
+                "Distribution center onsite"
+            ],
+            "history": [
+                "Number: 18",
+                "Ground Breaking: December 7th, 1968", 
+                "Dedicated: November 19th, 1974", 
+                "Height: 288'", 
+                "Architect: Keith W. Wilcox."
+            ],
+            "sessionSchedule": "Currently Closed for Renovations",
+            "closureSchedule": "Currently Closed for Renovations",
+            "summary": "The Washington D.C. Temple is the 18th constructed and 16th operating temple of The Church of Jesus Christ of Latter-day Saints Dedicated by President Spencer W. Kimball on September 17th, 1974.",
+        },
+        {
+            "code": "NC",
+            "name": "Raliegh, NC Temple",
+            "address": "574 Bryan Dr, Apex, NC 27502",
+            "phone": "(919) 362-4135",
+            "email": "",
+            "services" : [
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "No distribution center nearby"
+            ],
+            "history": [
+                "Number: 68",
+                "Ground Breaking: February 6th, 1999",
+                "Dedicated: December 18th, 1999",
+                "Height: 71'",
+                "Architect: Dan Dills"
+            ],
+            "sessionSchedule": "Currently Closed for Renovations",
+            "closureSchedule": [
+                "Currently Closed for Renovations",
+                "Open House: Saturday, 21 September 2019 - Saturday, 28 September 2019",
+                "Dedication: Sunday, 13 October 2019.",
+                "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019 - Monday, 13 January 2020"
+            ],
+            "summary": "The Raleigh North Carolina Temple is the 68th operating temple of The Church of Jesus Christ of Latter-day Saints.  Dedicated by President Gordon B. Hinckley on December 18th, 1999.",
+        },
+        {
+            "code": "PA",
+            "name": "Philadelphia, PA Temple",
+            "address": "1739 Vine St, Philadelphia, PA 19103",
+            "phone": "(215) 398-3040",
+            "email": "",
+            "services" : [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "No distribution center nearby"
+            ],
+            "history": [
+                "Number: 152",
+                "Ground Breaking: September 17th, 2011",
+                "Dedicated: Sptember 18th, 2016",
+                "Height: 208'",
+                "Architect: Perkins + Will and FFKR"
+            ],    
+            "sessionSchedule": "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 215-398-3040",
+            "closureSchedule": [
+                "Monday, 16 September 2019 - Monday, 30 September 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019 - Monday, 13 January 2020"
+            ],
+            "summary": "The Columbia South Carolina Temple is the 62nd operating temple of The Church of Jesus Christ of Latter-day Saints Dedicated by Gordon B. Hinckley on October 15th, 1999",
+        },
+        {
+            "code": "SC",
+            "name": "Columbia, SC Temple",
+            "address": "2905 Trotter Rd, Hopkins, SC 29061",
+            "phone": "(803) 647-9472",
+            "email": "",
+            "services" : [
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "Number: 62",
+                "Ground Breaking: December 5th, 1998",
+                "Dedicated: October 16th 1999",
+                "Height: 71'",
+                "Architect: Mike Watson"
+            ],    
+            "sessionSchedule": "To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 803-647-9472",
+            "closureSchedule": [
+                "Saturday 5 Oct 2019",
+                "Wednesday, 27 November 2019(Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 december 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019 - Monday, 13 January 2020"
+            ],
+            "summary": "The Columbia South Carolina Temple is the 62nd operating temple of The Church of Jesus Christ of Latter-day Saints Dedicated by Gordon B. Hinckley on October 15th, 1999",
+        }
+    ]
+}
