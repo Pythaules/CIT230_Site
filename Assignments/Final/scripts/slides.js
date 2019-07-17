@@ -53,7 +53,7 @@ function parseTemples(jsonObj) {
 }
 
 function parseSummary(jsonObj) {
-    var currentSummary = jsonObj;
+    var currentSummary = jsonObj['summary'];
     console.log(currentSummary);
     var myPara = document.createElement('p');
     myPara.textContent = currentSummary;
