@@ -33,6 +33,7 @@ request.onload = function() {
 
 function parseTemples(jsonObj) {
     currentTemple = jsonObj['temples'];
+    console.log(currentTemple);
     if (document.getElementById("slide").src.includes(DC)) {
         var templeCode = "DC"
     }
