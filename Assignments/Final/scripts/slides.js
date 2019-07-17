@@ -34,7 +34,7 @@ request.onload = function() {
 
 function parseTemples(jsonObj) {
     currentTemple = jsonObj['temples'];
-    //console.log(currentTemple);
+    console.log(currentTemple);
     if (document.getElementById("slide").src.includes("DC")) {
         var templeCode = "DC"
     } else if (document.getElementById("slide").src.includes("NC")) {
@@ -48,7 +48,7 @@ function parseTemples(jsonObj) {
     for (t = 0; t < currentTemple.length; t++) {
         if (currentTemple[t].code == templeCode)
         parseSummary(currentTemple[t].summary);
-        console.log(currentTemple[t].summary);
+        //console.log(currentTemple[t].summary);
     }
 }
 
