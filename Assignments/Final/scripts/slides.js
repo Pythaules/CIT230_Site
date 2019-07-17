@@ -29,19 +29,35 @@ request.send();
 request.onload = function() {
     var showTemple = request.response;
     parseTemples(showTemple);
-    console.log(showTemple);
+    //console.log(showTemple);
 }
 
 function parseTemples(jsonObj) {
     currentTemple = jsonObj['temples'];
-    console.log(currentTemple);
+    //console.log(currentTemple);
     if (document.getElementById("slide").src.includes("DC")) {
         var templeCode = "DC"
+    } else if (document.getElementById("slide").src.includes("NC")) {
+        var templeCode = "NC"
+    } else if (document.getElementById("slide").src.includes("PA")) {
+        var templeCode = "PA"
+    } else if (document.getElementById("slide").src.includes("SC")) {
+        var templeCode = "SC"
     }
+
     for (t = 0; t < currentTemple.length; t++) {
         if (currentTemple[t].code == templeCode)
         parseSummary(currentTemple[t]);
-        console.log(currentTemple[t]);
+        //console.log(currentTemple[t]);
     }
+}
+
+function parseSummary(jsonObj) {
+    var currentSummary = jsonObj;
+    var myPara = document.createElement('p');
+    myPara.textContent = currentSummary;
+
+    document.getElementById("summary").appendChild(myPara);
+
 }
 
