@@ -34,7 +34,7 @@ function showSummmary() {
 
 function parseTemples(jsonObj) {
     currentTemple = jsonObj['temples'];
-    console.log(currentTemple);
+    //console.log(currentTemple);
     if (document.getElementById("slide").src.includes("DC")) {
         var templeCode = "DC"
     } else if (document.getElementById("slide").src.includes("NC")) {
@@ -54,9 +54,9 @@ function parseTemples(jsonObj) {
 
 function parseSummary(jsonObj) {
     var currentSummary = jsonObj;
-    //console.log(currentSummary);
+    console.log(currentSummary);
     //var myPara = document.createElement('p');
-    var textNode = document.createTextNode(currentSummary)
+    var textNode = document.createTextNode(currentSummary);
     var item = document.getElementById("summary").childNodes[0];
         item.replaceChild(textNode, item.childNodes[0]);
     setTimeout("changeImg()", time);
