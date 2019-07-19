@@ -13,3 +13,7 @@ function parseSummary(jsonObj) {
     document.getElementById("summary").appendChild(myPara);
 
     setTimeout("changeImg()", time);
+
+    myPara.textContent = currentSummary;
+    document.getElementById("summary").replaceChild("")
+    document.getElementById("summary").appendChild(myPara);

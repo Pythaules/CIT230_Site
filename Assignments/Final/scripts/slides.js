@@ -55,9 +55,10 @@ function parseTemples(jsonObj) {
 function parseSummary(jsonObj) {
     var currentSummary = jsonObj;
     //console.log(currentSummary);
-    var myPara = document.createElement('p');
-    myPara.textContent = currentSummary;
-    document.getElementById("summary").appendChild(myPara);
+    //var myPara = document.createElement('p');
+    var textNode = document.createTextNode(currentSummary);
+    var item = document.getElementById("summary").childNodes[0];
+        item.replaceChild(textNode, item.childNodes[0]);
     setTimeout("changeImg()", time);
 }
 
