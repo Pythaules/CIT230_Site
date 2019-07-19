@@ -15,7 +15,7 @@ function changeImg() {
     } else {
         i = 0;
     }
-    setTimeout("changeImg()", time);
+    showSummmary(images[i]);
     }
 
 window.onload = changeImg;
@@ -26,7 +26,7 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-request.onload = function() {
+function showSummmary() {
     var showTemple = request.response;
     parseTemples(showTemple);
     //console.log(showTemple);
