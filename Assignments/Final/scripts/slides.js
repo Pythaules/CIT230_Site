@@ -26,7 +26,7 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-request.onload = function() {
+function showSummmary() {
     var showTemple = request.response;
     parseTemples(showTemple);
     //console.log(showTemple);
@@ -58,6 +58,6 @@ function parseSummary(jsonObj) {
     var myPara = document.createElement('p');
     myPara.textContent = currentSummary;
     document.getElementById("summary").appendChild(myPara);
-
+    setTimeout("changeImg()", time);
 }
 
