@@ -1,6 +1,6 @@
 var i = 0;
 var images = [];
-var time = 30000;
+var time = 3000;
 
 images[0] = 'images/DCfull.jpg';
 images[1] = 'images/NCfull.jpg';
