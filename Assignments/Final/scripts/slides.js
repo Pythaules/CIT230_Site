@@ -26,7 +26,7 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-function showSummmary() {
+request.onload = function() {
     var showTemple = request.response;
     parseTemples(showTemple);
     //console.log(showTemple);
