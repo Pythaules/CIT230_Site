@@ -1,20 +1,31 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f7f9fb;
     color: #31708e;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 14px;
+}
+header {
+    background-color: #f7f9fb;
 }
 .title {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 0 0;
 }
 .title img {
     height: 100px;
 }
 .title h1 {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
 }
 
 .motto {
@@ -25,6 +36,7 @@
 nav {
     display: flex;
     justify-content: center;
+    background-color: #f7f9fb;
 }
 nav ul {
     display: flex;
@@ -53,10 +65,14 @@ nav li a {
 .navi.responsive {
     width: 1in;
 }
+.current {
+    background-color: #8fc1e3;
+}
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f7f9fb;
 }
 main p {
     width: 90%;
@@ -66,20 +82,67 @@ main a {
 
 }
 main img {
-    border: 1px solid gold;
+    border: 1px ridge #687864;
+    border-radius: 10px;
+    box-shadow: 1px 2px #687864;
 }
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot {
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 0 5px 10px 5px;
-
 }
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 60%;
+    background-color: #f7f9fb;
+}
+.contact h3
+.contact p {
+    margin-top: none;
+    padding-top: none;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f9fb;
+    font-size: 20px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50px;
+    width: 20px;
+    padding: 5px 8px 5px 8px;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50px;
+    width: 20px;
+    padding: 5px 8px 5px 8px;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+    border-radius: 50px;
+    width: 20px;
+    padding: 5px 8px 5px 8px;
+}
+.copy p {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    color: #8fc1e3;
 }
 
 
@@ -104,10 +167,8 @@ footer {
     #slide {
         width: 400px;
         border-radius: 20px;
-    
-        
     }
-    .navi li{
+    .navi {
         display: none;
     }
     .navi.responsive {
@@ -135,6 +196,12 @@ footer {
     }
     .navi.navi.responsive li a.current {
         background-color:   ;
+    }
+    .contact p {
+        font-size: 12px;
+    }
+    .copy p {
+        font-size: 12px;
     }
 }
 
