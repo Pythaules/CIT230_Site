@@ -1,6 +1,6 @@
 var section = document.querySelector('section');
 
-var requestURL = 'https://pythaules.github.io/CIT230_Site/Assignments/Final/temples.json';
+var requestURL = 'https://pythaules.github.io/CIT230_Site/Assignments/Final/data/temples.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
