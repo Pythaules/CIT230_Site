@@ -1,4 +1,7 @@
 @media only screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
     #slide {
         width: 800px;
     }

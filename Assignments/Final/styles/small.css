@@ -1,8 +1,73 @@
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
 .title img {
     height: 100px;
+}
+.title h1 {
+    padding: 0 0 0 10px;
+}
+
+.motto {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav li {
+    display: flex;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: ridge;  
+    padding: 1px 2px 1px 2px;
+    margin: 1px 3px 1px 3px;
+    box-shadow: 5px 2px 2px #354649;
+}
+nav li a {
+    text-decoration: none;
+    justify-content: center;
+    background-color: transparent;
+    padding: 3px 0 0 3px;
+}
+.navi li:hover{
+    -webkit-animation: pulse 1.2s linear infinite;
+    animation: pulse 1.2s linear infinite;
+}
+.navi.responsive {
+    width: 1in;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main p {
+    width: 90%;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
 }
 
 
@@ -11,10 +76,48 @@
     width: 300px;
 }
 @media only screen and (max-width: 600px) {
+    .hamburger { 
+        display: inline;
+        position: absolute;
+        top: 1.0rem;
+        right: 1.25rem; 
+        -webkit-animation: pulse 1.2s linear infinite;
+        animation: pulse 1.2s linear infinite;
+        background-color: #354649;
+        color: white;
+    }
 
-    
     #slide {
         width: 400px;
+    }
+    .navi li{
+        display: none;
+    }
+    .navi.responsive {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        top: 2.0rem;
+        right: 1.25rem;
+        width: 1.5in;
+        
+    }
+    .navi.responsive li {
+        display: flex;
+        background-color: white;
+        padding: 3px 0 0 3px;
+    }
+    .navi.responsive li:hover {
+        background-color:  ;
+        color: ;
+    }
+    .navi.responsive li a:active {
+        background-color:  ;
+        color:  ;
+    }
+    .navi.navi.responsive li a.current {
+        background-color:   ;
     }
 }
 
