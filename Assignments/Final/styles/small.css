@@ -62,6 +62,7 @@ main p {
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .contact {
     display: flex;
