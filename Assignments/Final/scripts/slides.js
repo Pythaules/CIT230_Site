@@ -2,10 +2,10 @@ var i = 0;
 var images = [];
 var time = 3000;
 
-images[0] = 'images/DCsmall.jpg';
-images[1] = 'images/NCsmall.jpg';
-images[2] = 'images/PAsmall.jpg';
-images[3] = 'images/SCsmall.jpg';
+images[0] = 'images/DCfull.jpg';
+images[1] = 'images/NCfull.jpg';
+images[2] = 'images/PAfull.jpg';
+images[3] = 'images/SCfull.jpg';
 
 function changeImg() {
     document.getElementById("slide").src = images[i];
