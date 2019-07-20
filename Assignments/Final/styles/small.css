@@ -2,8 +2,29 @@
     font-family: 'Open Sans', sans-serif;
 }
 .title img {
-    height: 200px;
+    height: 100px;
 }
 #slide {
     width: 400px;
 }
+
+#map {
+    height: 200px;
+    width: 300px;
+}
+@media only screen and (max-width: 600px) {
+
+}
+
+
+/* Pulse */
+@-webkit-keyframes pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }

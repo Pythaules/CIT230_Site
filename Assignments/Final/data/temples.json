@@ -5,7 +5,7 @@
             "name": "Washington, DC Temple",
             "address": "9900 Stoneybrook Dr, Kensington, MD 20895",
             "phone": "(301) 588-0650",
-            "email": "",
+            "email": "washingtonDCtemple@ldsmail.com",
             "services" : [
                 "Clothing rental available",
                 "Cafeteria available",
@@ -28,7 +28,7 @@
             "name": "Raliegh, NC Temple",
             "address": "574 Bryan Dr, Apex, NC 27502",
             "phone": "(919) 362-4135",
-            "email": "",
+            "email": "ralieghNCtemple@ldsmail.com",
             "services" : [
                 "No clothing rental available",
                 "No cafeteria available",
@@ -58,7 +58,7 @@
             "name": "Philadelphia, PA Temple",
             "address": "1739 Vine St, Philadelphia, PA 19103",
             "phone": "(215) 398-3040",
-            "email": "",
+            "email": "philadelphiaPAtemple@ldsmail.com",
             "services" : [
                 "Clothing rental available",
                 "No cafeteria available",
@@ -87,7 +87,7 @@
             "name": "Columbia, SC Temple",
             "address": "2905 Trotter Rd, Hopkins, SC 29061",
             "phone": "(803) 647-9472",
-            "email": "",
+            "email": "columbiaSCtemple@ldsmail.com",
             "services" : [
                 "No clothing rental available",
                 "No cafeteria available",
