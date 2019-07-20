@@ -32,17 +32,18 @@ nav ul {
 nav li {
     display: flex;
     font-size: 20px;
-    border-radius: 10px;
-    border-style: ridge;  
+    border-radius: 10px;  
+    border: 1px ridge gold;
     padding: 1px 2px 1px 2px;
     margin: 1px 3px 1px 3px;
-    box-shadow: 5px 2px 2px #354649;
+    box-shadow: 5px 2px 2px gold;
 }
 nav li a {
     text-decoration: none;
     justify-content: center;
     background-color: transparent;
-    padding: 3px 0 0 3px;
+    padding: 3px 5px 0 5px;
+    color: black;
 }
 .navi li:hover{
     -webkit-animation: pulse 1.2s linear infinite;
@@ -59,10 +60,18 @@ main {
 main p {
     width: 90%;
 }
+main a {
+    text-decoration: none;
+    color: black;
+}
+main img {
+    border: 1px solid gold;
+}
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0 5px 10px 5px;
 }
 .contact {
     display: flex;
@@ -90,6 +99,9 @@ footer {
 
     #slide {
         width: 400px;
+        border-radius: 20px;
+    
+        
     }
     .navi li{
         display: none;
