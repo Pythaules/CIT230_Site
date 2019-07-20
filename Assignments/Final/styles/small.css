@@ -1,6 +1,8 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f7f9fb;
+    color: #31708e;
 }
 .title {
     display: flex;
@@ -33,17 +35,16 @@ nav li {
     display: flex;
     font-size: 20px;
     border-radius: 10px;  
-    border: 1px ridge gold;
+    border: 1px ridge #8fc1e3;
     padding: 1px 2px 1px 2px;
     margin: 1px 3px 1px 3px;
-    box-shadow: 5px 2px 2px gold;
+    box-shadow: 5px 2px #687864;
 }
 nav li a {
     text-decoration: none;
     justify-content: center;
     background-color: transparent;
     padding: 3px 5px 0 5px;
-    color: black;
 }
 .navi li:hover{
     -webkit-animation: pulse 1.2s linear infinite;
@@ -62,7 +63,7 @@ main p {
 }
 main a {
     text-decoration: none;
-    color: black;
+
 }
 main img {
     border: 1px solid gold;
@@ -72,6 +73,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding: 0 5px 10px 5px;
+
 }
 .contact {
     display: flex;
@@ -84,17 +86,19 @@ footer {
 #map {
     height: 200px;
     width: 300px;
+    background-color: transparent;
 }
 @media only screen and (max-width: 600px) {
     .hamburger { 
         display: inline;
         position: absolute;
-        top: 1.0rem;
+        top: .5rem;
         right: 1.25rem; 
         -webkit-animation: pulse 1.2s linear infinite;
         animation: pulse 1.2s linear infinite;
-        background-color: #354649;
-        color: white;
+        background-color: #5085a5;
+        color: #687864;
+        box-shadow: 2px 2px #8fc1e3;
     }
 
     #slide {
