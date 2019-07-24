@@ -18,11 +18,11 @@ function parseTemples(jsonObj) {
         populateTempleData(currentTemple[t]);
     }
     for (t = 0; t < currentTemple.length; t++) {
-        if (currentTemple[t].code == 'NC')
+        if (currentTemple[t].code == 'PA')
         populateTempleData(currentTemple[t]);
     }    
     for (t = 0; t < currentTemple.length; t++) {
-        if (currentTemple[t].code == 'PA')
+        if (currentTemple[t].code == 'NC')
         populateTempleData(currentTemple[t]);
     }
     for (t = 0; t < currentTemple.length; t++) {
@@ -35,29 +35,40 @@ function populateTempleData(jsonObj) {
     var temple = jsonObj;
 
     var myArticle = document.createElement('article');
-    var myH3 = document.createElement('h3');
+    var myH2 = document.createElement('h2');
+    var myImg = document.createElement('img')
+    myImg.setAttribute("src", "images/" + temple.code + "full.jpg");
+    myImg.setAttribute("alt", temple.name + " Image");
     var myPara1 = document.createElement('p');
-        myPara1.setAttribute("class", "motto")
     var myPara2 = document.createElement('p');
     var myPara3 = document.createElement('p');
     var myPara4 = document.createElement('p');
-    var myImg = document.createElement('img')
-        myImg.setAttribute("src", "images/" + temple.code + "full.jpg");
-        myImg.setAttribute("alt", temple.name + " Image");
+    var myPara5 = document.createElement('p');
+    var myPara6 = document.createElement('p');
+    var myPara7 = document.createElement('p');
+    var myPara8 = document.createElement('p');
     
-    myH3.textContent = temple.name;
+    myH2.textContent = temple.name;
+    myImg.innerHTML;
     myPara1.textContent = 'Address: ' + temple.address;
     myPara2.textContent = 'Phone: ' + temple.phone;
-    myPara3.textContent = 'Email:' + temple.email;
-    myPara4.textContent = 'Services:' + temple.services;
-    myImg.innerHTML;
+    myPara3.textContent = 'Email: ' + temple.email;
+    myPara4.textContent = 'Services: ' + temple.services;
+    myPara5.textContent = 'History: ' + temple.history;
+    myPara6.textContent = 'Session Schedule: ' + temple.sessionSchedule;
+    myPara7.textContent = 'Closure Schedule: ' + temple.closureSchedule;
+    myPara8.textContent = 'Summary: ' + temple.summary;
 
-    myArticle.appendChild(myH3);
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myImg);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
     myArticle.appendChild(myPara4);
-    myArticle.appendChild(myImg);
+    myArticle.appendChild(myPara5);
+    myArticle.appendChild(myPara6);
+    myArticle.appendChild(myPara7);
+    myArticle.appendChild(myPara8);
 
     document.getElementById("index").appendChild(myArticle);
 }

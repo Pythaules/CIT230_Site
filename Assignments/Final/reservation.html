@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Temple Inn & Suites - Reservations</title> 
+        <meta name="author" content="Michael Smith">
+        <meta name="description" content="Specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/templeIcon.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <img src="images/christus.jpg" alt="Jesus Christ">
+                <h1>Temple Inn & Suites</h1>
+            </div>
+            <div class="motto">
+                <h2>You serve Him - We server you</h2>
+            </div>
+        </header>
+        <nav>
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            <ul class="navi">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li class="current"><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Reservations</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label class="user">Full Name*<input type="text" name="fname" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" required></label>
+                    <label class="user">Email Address<input type="email" name="email" placeholder="storm@stormcenter.com"></label>
+                    <label class="user">Phone Number*<input type="tel" name="phone" pattern="(?=.*\d).{10,}" placeholder="##########" required></label>
+                    <label class="user">Zip Code*<input type="number" name="zip" placeholder="#####" required></label>
+                </fieldset>
+                <fieldset> 
+                    <legend>Date of Reservation</legend>   
+                    <label class="storm">Storm Date*<input type="date" name="sdate" required></label>
+                    <label class="storm">Storm Type*<input list="stormtype" name="stype" required></label>
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado"> 
+                        <option value="Snow Storm">       
+                    </datalist>
+                    <label class="storm" for="severity">Severaty Rating (1 to 10):</label>
+                    <input type="range" id="severity" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="severityvalue">1</span>
+                    <label class="storm">Storm Region</label>
+                        <select id="stormregion" size="3">
+                            <option disabled selected>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Sugar City">Sugar City</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    <label class="storm">User in danger Level</label>
+                    <label class="danger"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="danger"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="danger"><input type="radio" name="danger" value="no">No</label>
+                </fieldset>
+                <fieldset>
+                    <label class="storm">Additional infromation and comments<textarea name="addinfo" cols="50"></textarea></label>
+                    <button class="submitBtn" name="submit">Send Storm Alert</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+        <div id="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+        </div>
+        <div class="foot">
+            <div class="contact">
+                <h3 class="contact">Contact Information</h3>
+                <p class="contact">4800 Montgomery Lane #300, Bethesda, MD 20814</p>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2019 Temple Inn & Suites</p>
+            <p>CIT 230 <a href="byui.edu">BYUi.edu</a> | Michael Smith <span id="currentdate">Current Date</span></p>
+            <p>All weather presented here was derived from <span><a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a></span></p>
+        </div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/maps.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYmk-KxsgnVyxx9ZvctfUod9zPCyABKl0&callback=initMap" async defer></script>
+    </body>
+    </html>

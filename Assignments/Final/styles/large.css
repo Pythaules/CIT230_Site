@@ -5,4 +5,7 @@
     #slide {
         width: 800px;
     }
+    #index {
+        grid-template-columns: 1fr 1fr;
+    }
 }

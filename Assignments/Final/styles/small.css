@@ -144,13 +144,24 @@ footer {
     margin: 0 0 0 0;
     color: #8fc1e3;
 }
-
-
 #map {
     height: 200px;
     width: 300px;
     background-color: transparent;
 }
+#index {
+    display: grid;
+
+}
+#index img {
+    max-width:100%;
+    border-radius: 10px;
+}
+#index article {
+    padding: 0 2px 0 2px;
+
+}
+
 @media only screen and (max-width: 600px) {
     .hamburger { 
         display: inline;
@@ -183,25 +194,23 @@ footer {
     }
     .navi.responsive li {
         display: flex;
-        background-color: white;
+        background-color:#f7f9fb;
         padding: 3px 0 0 3px;
     }
     .navi.responsive li:hover {
-        background-color:  ;
-        color: ;
+        background-color: #55ACEE;
     }
     .navi.responsive li a:active {
-        background-color:  ;
-        color:  ;
-    }
-    .navi.navi.responsive li a.current {
-        background-color:   ;
+        background-color: #55ACEE;
     }
     .contact p {
         font-size: 12px;
     }
     .copy p {
         font-size: 12px;
+    }
+    #index {
+        grid-template-columns: 1fr;
     }
 }
 
