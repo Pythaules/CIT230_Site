@@ -4,6 +4,8 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
+
+
 request.onload = function() {
     var showTemples = request.response;
     parseTemples(showTemples);
@@ -31,6 +33,7 @@ function parseTemples(jsonObj) {
 
 function populateTempleData(jsonObj) {
     var closures = jsonObj['closureSchedule'];
+    console.log(closureSchedule);
     for (c = 0; c < closures.length; c++) {
         populateClosures(closures[c]);
         console.log(closures);
