@@ -153,10 +153,7 @@ footer {
     display: grid;
 
 }
-#index img {
-    max-width:100%;
-    border-radius: 10px;
-}
+
 #index article {
     padding: 0 2px 0 2px;
 
@@ -183,7 +180,39 @@ form legend {
     font-size: 16px;
     font-weight: bold;
 }
+.services {
+    display: grid;
+    padding: 0 20px 0 20px;
+    grid-gap: 10px;
+    align-items: center;
 
+}
+.services article  {
+    display: flex;
+    flex-direction: column;    
+    max-width: 300px;
+}
+.services img {
+    max-width: 100%;
+}
+.temples {
+    display: grid;
+}
+.temples img {
+    max-width:100%;
+    border-radius: 10px;
+}
+.temples article {
+    padding: 0 0 0 10px;
+}
+.temples h3 {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.temples p {
+    padding: 0 0 0 10px;
+    margin: 0 0 0 0;
+}
 
 @media only screen and (max-width: 600px) {
     .hamburger { 
@@ -232,7 +261,10 @@ form legend {
     .copy p {
         font-size: 12px;
     }
-    #index {
+    .temples {
+        grid-template-columns: 1fr;
+    }
+    section.services {
         grid-template-columns: 1fr;
     }
 }

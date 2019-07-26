@@ -2,9 +2,11 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>Temple Inn & Suites - Home</title> 
+        <title>Temple Inn & Suites - Temples</title> 
         <meta name="author" content="Michael Smith">
         <meta name="description" content="Specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="images/templeIcon.png">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
@@ -19,43 +21,49 @@
                 <h1>Temple Inn & Suites</h1>
             </div>
             <div class="motto">
-                <h2>Making it easier to concentrate on your stay</h2>
+                <h2>You serve Him - We server you</h2>
             </div>
         </header>
         <nav>
             <button class="hamburger" onclick="toggleHam()">&#9776;</button>
             <ul class="navi">
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="temples.html">Temples</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="temples.html">Temples</a></li>
                 <li><a href="reservation.html">Reservations</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <h2><a href="reservation.html">Reservations filling fast, set yours today</a></h2>
         </nav>
         <main>
-
-            <a href="temples.html"><img id="slide"></a>
-            <div>
-                <h3>Temple Summary</h3>
-                <p id="summary">Temple Summary</p>
-            </div>
+            <h2><a href="reservation.html">- Set your reservation today! -</a></h2>
         </main>
-        <section>
-            <article>
-                
-            </article>
+        <section id="index">
+
         </section>
         <footer>
-            <div class="contact">
-                <h3 class="contact">Contact Information</h3>
-                <p class="contact">4800 Montgomery Lane #300, Bethesda, MD 20814</p>
+            <div id="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
             </div>
-            <div id="map"></div>
+            <div class="foot">
+                <div class="contact">
+                    <h3 class="contact">Contact Information</h3>
+                    <p class="contact">4800 Montgomery Lane #300, Bethesda, MD 20814</p>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2019 Temple Inn & Suites</p>
+                <p>CIT 230 <a href="byui.edu">BYUi.edu</a> | Michael Smith <span id="currentdate">Current Date</span></p>
+                <p>All weather presented here was derived from <span><a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a></span></p>
+            </div>
         </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
         <script src="scripts/maps.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYmk-KxsgnVyxx9ZvctfUod9zPCyABKl0&callback=initMap" async defer></script>
-        <script src="scripts/slides.js"></script>
- 
+        <script src="scripts/temples.js"></script>
     </body>
     </html>

@@ -11,7 +11,13 @@
     #slide {
         width: 600px;
     }
-    #index {
+    .temples {
+        grid-template-columns: 1fr 1fr;
+    }
+    .services {
+
+    }
+    section.services {
         grid-template-columns: 1fr 1fr;
     }
 }

@@ -2,10 +2,19 @@
     .hamburger {
         display: none;
     }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
     #slide {
         width: 800px;
     }
-    #index {
+    .temples {
         grid-template-columns: 1fr 1fr;
+    }
+    section.services {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
