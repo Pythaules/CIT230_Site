@@ -328,12 +328,14 @@ p {
 form {
     background-color: #e0e7e9;
     box-shadow: 10px 5px 5px #a3c6c4;
+
 }
 form fieldset {
     margin: 1rem 2rem 0 0 ;
     border: 1px solid lightgrey;
     border-radius: 10px;
     padding: .5rem 2%;
+    width: 50%;
 }
 form legend {
     color: #354649;
