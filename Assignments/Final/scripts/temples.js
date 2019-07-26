@@ -44,5 +44,5 @@ function populateClosures(jsonObj) {
     var close =jsonObj;
     var myPara = document.createElement('p');
     myPara.textContent = close;
-    document.getElementsById(temlple.code).appendChild(myPara);
+    document.getElementsById(temple.code).appendChild(myPara);
 }
