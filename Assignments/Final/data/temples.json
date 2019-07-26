@@ -20,7 +20,9 @@
                 "Architect: Keith W. Wilcox."
             ],
             "sessionSchedule": "Currently Closed for Renovations",
-            "closureSchedule": "Currently Closed for Renovations",
+            "closureSchedule": [ 
+                "Currently Closed for Renovations"
+            ],
             "summary": "The Washington D.C. Temple is the 18th constructed and 16th operating temple of The Church of Jesus Christ of Latter-day Saints Dedicated by President Spencer W. Kimball on September 17th, 1974."
         },
         {

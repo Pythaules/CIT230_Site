@@ -29,19 +29,21 @@ function parseTemples(jsonObj) {
         if (currentTemple[t].code == 'SC')
         populateTempleData(currentTemple[t]);
     }
+
 }
 
 function populateTempleData(jsonObj) {
-    var closures = jsonObj['closureSchedule'];
-    console.log(closureSchedule);
-    for (c = 0; c < closures.length; c++) {
-        populateClosures(closures[c]);
-        console.log(closures);
+    console.log(jsonObj);
+    var currentClosure = jsonObj['closureSchedule'];
+    for (c = 0; c < currentClosure.length; c++) {
+        populateClosures(currentClosure[c]);
+        //console.log(closures[c]);
     }
 }
 
 function populateClosures(jsonObj) {
-    var close =jsonObj;
+    console.log(jsonObj);
+    var close = jsonObj;
     var myPara = document.createElement('p');
     myPara.textContent = close;
     document.getElementsById(temple.code).appendChild(myPara);
