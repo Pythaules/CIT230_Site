@@ -18,7 +18,7 @@ weatherPull.onload = function() {
     document.getElementById('dcHigh').innerHTML = weatherData.main.temp_max;
     document.getElementById('dcChill').innerHTML = wChill
     document.getElementById('dcHumidity').innerHTML = weatherData.main.humidity;
-    document.getElementById('dcWindSpeed').innerHTML = weatherData.wind.speed;
+    document.getElementById('dcWindspeed').innerHTML = weatherData.wind.speed;
     document.getElementById('dcWinddir').innerHTML = degToCompass(windDeg);
 }
 
