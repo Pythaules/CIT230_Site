@@ -40,7 +40,7 @@
                 <fieldset>
                     <legend>User Information</legend>
                     <label class="user">Full Name:* <input type="text" name="fname" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" required></label>
-                    <label class="user">Email Address: <input type="email" name="email" placeholder="storm@stormcenter.com"></label>
+                    <label class="user">Email Address: <input type="email" name="email" placeholder="patron@templesuites.com"></label>
                     <label class="user">Phone Number:* <input type="tel" name="phone" pattern="(?=.*\d).{10,}" placeholder="##########" required></label>
                     <label class="user">Home State: <input type="text" name="hstate" pattern="^(?-i:A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY])$"></label>
                     <label class="user">Country: <input type="text" name="country"></label>
@@ -61,8 +61,8 @@
                         <option value="Indoor Pool">Indoor Pool</option>
                         <option value="Temple Shuttle">Temple Shuttle</option>
                         </select></label>
-                        <label class="storm">Temple Region<br>
-                        <select id="stormregion" size="4">
+                        <label class="reservation">Temple Region<br>
+                        <select id="templeregion" size="4">
                             <option disabled selected>Select Temple</option>
                             <option value="DC">Washington DC Temple</option>
                             <option value="SC">Columbia SC Temple</option>
@@ -72,7 +72,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Comments</legend>
-                    <label class="storm">Additional infromation and comments<textarea name="addinfo" cols="50"></textarea></label>
+                    <label class="reservation">Additional infromation and comments<textarea name="addinfo" cols="50"></textarea></label>
                     <button class="submitBtn" name="submit">Send Reservation</button>
                 </fieldset>
             </form>

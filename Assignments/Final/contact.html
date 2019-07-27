@@ -35,7 +35,17 @@
             </ul>
         </nav>
         <main>
-
+            <h2>Your feedback is important to us</h2>
+            <p>How can we help you?</p>
+            <form method="get" action="contactus.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label class="user">Full Name:* <input type="text" name="fname" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" required></label>
+                    <label class="user">Email Address: <input type="email" name="email" placeholder="patron@templesuites.com"></label>
+                    <label class="user">Phone Number:* <input type="tel" name="phone" pattern="(?=.*\d).{10,}" placeholder="##########" required></label>
+                    <label class="reservation">Additional infromation and comments<textarea name="addinfo" cols="50"></textarea></label>
+                </fieldset>
+            </form>    
         </main>
         <footer>
         <div id="social">

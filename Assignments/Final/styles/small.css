@@ -76,6 +76,7 @@ main {
 }
 main p {
     width: 90%;
+    text-align: center;
 }
 main a {
     text-decoration: none;
