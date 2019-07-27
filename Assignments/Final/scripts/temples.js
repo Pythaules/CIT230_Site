@@ -33,10 +33,10 @@ function parseTemples(jsonObj) {
 }
 
 function populateTempleData(jsonObj) {
-    console.log(jsonObj);
+    //console.log(jsonObj);
     var currentClosure = jsonObj['closureSchedule'];
     for (c = 0; c < currentClosure.length; c++) {
-        console.log(currentClosure[c]);
+        //console.log(currentClosure[c]);
         var myPara = document.createElement('p');
         myPara.textContent = currentClosure[c];
         document.getElementById(jsonObj.code).appendChild(myPara);

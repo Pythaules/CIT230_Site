@@ -1,6 +1,6 @@
 const weatherPull = new XMLHttpRequest();
 apiURL = "//api.openweathermap.org/data/2.5/weather?";
-var apiID = "lat=38.895&lon=-77.0367"
+var apiID = "id=4140963"
 
 apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
 weatherPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
