@@ -36,15 +36,10 @@ function populateTempleData(jsonObj) {
     console.log(jsonObj);
     var currentClosure = jsonObj['closureSchedule'];
     for (c = 0; c < currentClosure.length; c++) {
-        populateClosures(currentClosure[c]);
-        //console.log(closures[c]);
+        console.log(currentClosure[c]);
+        var myPara = document.createElement('p');
+        myPara.textContent = currentClosure[c];
+        document.getElementById(jsonObj.code).appendChild(myPara);
     }
 }
 
-function populateClosures(jsonObj) {
-    console.log(jsonObj);
-    var close = jsonObj;
-    var myPara = document.createElement('p');
-    myPara.textContent = close;
-    document.getElementsById(temple.code).appendChild(myPara);
-}
