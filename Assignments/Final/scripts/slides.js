@@ -54,8 +54,7 @@ function parseTemples(jsonObj) {
 
 function parseSummary(jsonObj) {
     var currentSummary = jsonObj;
-    console.log(currentSummary);
-    //var myPara = document.createElement('p');
+    //console.log(currentSummary);
     document.getElementById('summary').innerText = currentSummary;
 
     setTimeout("changeImg()", time);
