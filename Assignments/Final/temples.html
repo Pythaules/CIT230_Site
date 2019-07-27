@@ -40,6 +40,14 @@
         <section class="temples">
             <article id="DC">
                 <h2>Washington DC Temple</h2>
+                    <div class="weather">
+                        <p class="dcweather">Currently: <span id="dcWeather">dcWeather</span></p>
+                        <p class="dcweather">High: <span id="dcHigh">dcHigh</span></p>
+                        <p class="dcweather">Wind Chill: <span id="dcChill">dcChill</span></p>
+                        <p class="dcweather">Humidity: <span id="dcHumidity">dcHumidity</span></p>
+                        <p class="dcweather">Wind Speed: <span id="dcWindspeed">dcWindspeed</span></p>
+                        <p class="dcweather">Wind Direction: <span id="dcWinddir">dcWinddir</span></p>
+                    </div>
                     <img src="images/DCfull.jpg" alt="Washington DC Temple">
                 <h3>Address: </h3>
                     <p>9900 Stoneybrook Dr, Kensington, MD 20895</p>
@@ -61,6 +69,7 @@
                 <h3>Sessions: </h3>
                     <p>Currenlty Closed for Renovations</p>
                 <h3>Temple Closures: </h3>
+
             </article>
             <article id="PA">
                     <h2>Philadelphia PA Temple</h2>
@@ -160,5 +169,6 @@
         <script src="scripts/maps.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYmk-KxsgnVyxx9ZvctfUod9zPCyABKl0&callback=initMap" async defer></script>
         <script src="scripts/temples.js"></script>
+        <script src="dcWeather.js"></script>
     </body>
     </html>

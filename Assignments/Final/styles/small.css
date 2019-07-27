@@ -187,6 +187,7 @@ form legend {
     align-items: center;
 
 }
+
 .services article  {
     display: flex;
     flex-direction: column;    
@@ -206,7 +207,7 @@ form legend {
     padding: 0 0 0 10px;
 }
 .temples h3 {
-    padding: 0 0 0 0;
+    padding: 2px 0 5px 0;
     margin: 0 0 0 0;
 }
 .temples p {
