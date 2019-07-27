@@ -1,13 +1,13 @@
-const weatherPull = new XMLHttpRequest();
+const scweatherPull = new XMLHttpRequest();
 apiURL = "//api.openweathermap.org/data/2.5/weather?";
 var apiID = "id=4575352"
 
 apiKEY = "&appid=338ef3b2197ac9e5d641b0bd773526c3";
-weatherPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
-weatherPull.send();
+scweatherPull.open("GET",apiURL + apiID + apiKEY + "&units=imperial", true);
+scweatherPull.send();
 
-weatherPull.onload = function() {
-    let weatherData = JSON.parse(weatherPull.responseText);
+scweatherPull.onload = function() {
+    let weatherData = JSON.parse(scweatherPull.responseText);
     console.log(weatherData);
     cTemp = weatherData.main.temp;
     cSpeed = weatherData.wind.speed;
