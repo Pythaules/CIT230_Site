@@ -29,7 +29,7 @@ request.send();
 function showSummmary() {
     var showTemple = request.response;
     parseTemples(showTemple);
-    //console.log(showTemple);
+    console.log(showTemple);
 }
 
 function parseTemples(jsonObj) {
